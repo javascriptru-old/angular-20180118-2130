@@ -1,0 +1,18 @@
+<h1 [style.color]="myColor">{{title}} {{user.name}}!</h1>
+
+<button (click) = "changeColor('blue')"  >Click me!</button>
+
+<!-- <input (input)="changeColor($event.target.value)"
+ (keydown.enter)="myColor = 'pink'"> -->
+<input #myInput>
+<button (click)="changeColor(myInput.value)"></button>
+
+{{random()}}
+
+
+<app-car #car1 [color]=" [1,2,3] "></app-car>
+<app-car [color]=" 'green' "></app-car>
+<app-car [color]=" 'blue' "></app-car>
+
+
+
