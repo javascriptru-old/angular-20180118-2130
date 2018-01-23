@@ -13,8 +13,8 @@ export class UsersComponent implements OnInit {
           avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg',
           bgPicture: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg',
           actions: {
-              follow: '#.',
-              info: '#.'
+              follow: 'yellow',
+              info: 'orange'
           }
       },
       {
@@ -24,8 +24,8 @@ export class UsersComponent implements OnInit {
           avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample2.jpg',
           bgPicture: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample74.jpg',
           actions: {
-              follow: '#.',
-              info: '#.'
+              follow: 'tomato',
+              info: 'grey'
           }
       },
       {
@@ -35,8 +35,8 @@ export class UsersComponent implements OnInit {
           avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg',
           bgPicture: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample69.jpg',
           actions: {
-              follow: '#.',
-              info: '#.'
+              follow: 'rgb(139, 195, 74)',
+              info: '#E91E63'
           }
       },
   ];

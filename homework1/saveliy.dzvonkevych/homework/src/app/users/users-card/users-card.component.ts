@@ -7,6 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class UsersCardComponent implements OnInit {
   @Input() public user: any[];
+  public titleColor: string = '#fff';
+
+  public setTitleColor(color: string) {
+    this.titleColor = color;
+  }
 
   constructor() { }
 
