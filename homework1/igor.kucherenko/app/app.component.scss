@@ -1,0 +1,24 @@
+:host {
+  display: block;
+}
+
+.app-component {
+  padding-top: 20px;
+
+  &__wrapper {
+    margin: 0 auto;
+    padding: 10px;
+    width: 960px;
+    background-color: #f6f6f6;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__profile-card-box {
+    display: flex;
+    justify-content: space-around;
+  }
+}
