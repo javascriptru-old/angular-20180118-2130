@@ -1,15 +1,10 @@
 <section class="app-component">
     <div class="app-component__wrapper">
-        <h1 class="app-component__title">Igor Kucherenko hw-1</h1>
-        <div class="app-component__profile-card-box">
+        <h1 class="app-component__title">Igor Kucherenko. hw-1</h1>
+        <div class="app-component__profile-card-box" *ngIf="users && users.length">
             <app-user-card class="app-component__profile-card"
-                           [user]="{name: 'Ivan', surname: 'Petrov', position: 'FE developer'}">
-            </app-user-card>
-            <app-user-card class="app-component__profile-card"
-                           [user]="{name: 'Sergey', surname: 'Ivanov', position: 'BE developer'}">
-            </app-user-card>
-            <app-user-card class="app-component__profile-card"
-                           [user]="{name: 'Maria', surname: 'Sidorova', position: 'QA Engineer'}">
+                           *ngFor="let user of users"
+                           [user]="user">
             </app-user-card>
         </div>
     </div>
