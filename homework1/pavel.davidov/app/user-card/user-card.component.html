@@ -1,0 +1,9 @@
+<figure class="snip1336" #card>
+  <div style="min-height: 300px;"><!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" /> --></div>
+  <figcaption>
+    <img *ngIf="user.avatar" src="{{user.avatar}}" alt="{{user.name}}" class="profile" />
+    <h2>{{user.fullname}}<span>{{user.post}}</span></h2>
+    <p>{{user.about}}</p>
+    <button (click)="randomColor(card)" class="">Color</button>
+  </figcaption>
+</figure>
