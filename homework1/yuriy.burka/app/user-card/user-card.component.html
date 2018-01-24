@@ -1,0 +1,6 @@
+<div class="user-card" [style.background-color]="color">
+  <h2>{{user?.name}}<span>{{user?.level}} level</span>
+    <a href="#" class="lvl-up" (click)="lvlUp()">LVL UP</a>
+  </h2>
+  <p>{{user?.description}}</p>
+</div>
