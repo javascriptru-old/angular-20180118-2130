@@ -1,0 +1,36 @@
+.user-card {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 20px;
+
+    &__name {
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        position: relative;
+        padding-bottom: 3px;
+        border-bottom: 3px solid #333;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    &__age {
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        width: 100%;
+        background: none;
+        border: 1px solid #563d7c;
+        padding: 10px;
+        border-radius: 3px;
+        color: #563d7c;    
+        cursor: pointer;
+    }
+
+    &__about {
+        margin-bottom: 30px;
+    }
+}
