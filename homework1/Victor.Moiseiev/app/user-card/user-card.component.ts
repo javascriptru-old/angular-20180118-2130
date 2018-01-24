@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { User } from '../../Model/user';
+import { User } from '../Model/user';
+
 
 @Component({
   moduleId: module.id,
