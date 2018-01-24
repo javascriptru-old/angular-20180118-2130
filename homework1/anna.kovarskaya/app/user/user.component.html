@@ -1,0 +1,8 @@
+<figure class="snip1336" [style.backgroundColor]="backColor">
+  <figcaption>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg" alt="profile-sample4" class="profile" />
+    <h2>{{user.name}}<span>{{user.position}}</span></h2>
+    <p>{{user.text}}</p>
+    <div style="text-align: center"><a (click)="changeColor(randomColor())" class="follow">Random background</a></div>
+  </figcaption>
+</figure>
