@@ -1,0 +1,21 @@
+<figure class="snip1336">
+  <img src="{{user.bgPicture}}" alt="sample69" />
+  <figcaption>
+    <img src="{{user.avatar}}"
+      alt="profile-sample5"
+      class="profile" />
+
+    <h2 [style.color]="titleColor">{{user.name}}<span>{{user.title}}</span></h2>
+    <p>{{user.excerpt}}.</p>
+
+    <a href="#"
+      title="Set a color: {{user.actions.follow}}"
+      (click)="setTitleColor(user.actions.follow)"
+      class="follow">Follow</a>
+
+    <a href="#"
+      title="Set a color: {{user.actions.info}}"
+      (click)="setTitleColor(user.actions.info)"
+      class="info">More Info</a>
+  </figcaption>
+</figure>
