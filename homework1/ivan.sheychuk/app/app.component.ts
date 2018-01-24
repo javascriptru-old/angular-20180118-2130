@@ -1,12 +1,20 @@
 import { Component } from '@angular/core';
 
+interface IUser {
+  backImage: string;
+  avatar: string;
+  name: string;
+  profession: string;
+  about: string;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public users = [
+  public users: IUser[] = [
     {
       backImage: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg',
       avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg',
