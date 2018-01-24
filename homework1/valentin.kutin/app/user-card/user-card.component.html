@@ -1,0 +1,8 @@
+<div class="user-card" [style.background-color]="color">
+  <button class="user-card__button" (click)="color = getRandomColor()">Change color</button>
+  <div class="user-card__description">
+    <img class="user-card__avatar" [src]="avatar"/>
+    <div class="user-card__name">{{username}}</div>
+    <div class="user-card__post">{{post}}</div>
+  </div>
+</div>
