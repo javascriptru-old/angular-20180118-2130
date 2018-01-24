@@ -1,0 +1,15 @@
+<div class="user-card" *ngIf="user" #userCardRef>
+  <div class="user-card__name">
+    {{ user.name }}
+  </div>
+
+  <div class="user-card__age">
+    {{ user.age }} years old
+  </div>
+
+  <div class="user-card__about">
+    {{ user.about }}
+  </div>
+
+  <button type="button" class="user-card__btn" (click)="changeBgCard(userCardRef)">play with me!</button>
+</div>
