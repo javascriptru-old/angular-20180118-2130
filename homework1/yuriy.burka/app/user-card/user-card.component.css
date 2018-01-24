@@ -1,0 +1,48 @@
+.user-card {
+  font-family: Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  padding: 25px;
+}
+.user-card a {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.user-card a:hover {
+  opacity: 1;
+}
+.user-card h2 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+.user-card h2 span {
+  display: block;
+  font-size: 0.8em;
+  color: #2980b9;
+  margin-top: 2px;
+}
+.user-card p {
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
