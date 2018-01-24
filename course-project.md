@@ -18,3 +18,4 @@
 12. Авторизация в приложении
 
 Вариант дизайна - https://github.com/khalifenizar/gmail-clone
++
