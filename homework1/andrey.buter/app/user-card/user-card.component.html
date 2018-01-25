@@ -1,0 +1,10 @@
+<figure class="snip1336">
+	<img [src]="card.background" alt="sample87" />
+	<figcaption [style.backgroundColor]="cardColor">
+		<img [src]="card.avatar" alt="profile-sample4" class="profile" />
+		<h2>{{ card.name }}<span>{{ card.position }}</span></h2>
+		<p>{{ card.text }}</p>
+		<a href="#" class="follow">Follow</a>
+		<a href="#" class="info" (click)="changeColor()">Change color</a>
+	</figcaption>
+</figure>
