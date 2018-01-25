@@ -1,0 +1,11 @@
+<figure class="snip1336">
+  <img src="{{user.imageBackground}}" alt="sample" />
+  <figcaption [style.backgroundColor]="myColor">
+    <img src={{user.avatar}} alt="profile-sample" class="profile" />
+    <h2>{{user.name}}<span>{{user.position}}</span></h2>
+    <p>{{user.describe}}</p>
+    
+    <a href="#" (click)="changeColor()" class="info">Change color</a>
+  </figcaption>
+</figure>
+
