@@ -1,0 +1,7 @@
+<button (click)="startReceiving()" *ngIf="!timerId">Start receiving</button>
+<button (click)="stopReceiving()" *ngIf="!!timerId">Stop receiving</button>
+<hr>
+
+<table>
+  <app-letter *ngFor="let letter of letters" [letter]="letter" (selectToDelete)="deleteLetter($event)"> </app-letter>
+</table>
