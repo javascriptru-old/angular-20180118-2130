@@ -1,0 +1,7 @@
+<article class="user-card" [style.backgroundColor]="bgColor">
+    <span class="user-card__info-field">{{user.name}}</span>
+    <span class="user-card__info-field">{{user.surname}}</span>
+    <span class="user-card__info-field">{{user.position}}</span>
+
+    <button class="user-card__btn" (click)="setRandomColor()">Change background color</button>
+</article>

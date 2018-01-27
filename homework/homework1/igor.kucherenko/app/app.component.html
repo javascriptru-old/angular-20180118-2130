@@ -1,0 +1,11 @@
+<section class="app-component">
+    <div class="app-component__wrapper">
+        <h1 class="app-component__title">Igor Kucherenko. hw-1</h1>
+        <div class="app-component__profile-card-box" *ngIf="users && users.length">
+            <app-user-card class="app-component__profile-card"
+                           *ngFor="let user of users"
+                           [user]="user">
+            </app-user-card>
+        </div>
+    </div>
+</section>

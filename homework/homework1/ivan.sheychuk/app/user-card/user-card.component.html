@@ -1,0 +1,11 @@
+<figure *ngIf="user" class="snip1336" [style.backgroundColor]="bgColor">
+  <img [src]="user.backImage" alt="sample87" />
+  <figcaption>
+    <img [src]="user.avatar" alt="profile-sample4" class="profile" />
+    <h2>{{user.name}}
+      <span>{{user.profession}}</span>
+    </h2>
+    <p>{{user.about}}</p>
+    <button class="follow" (click)="changeColor()">Change Background color</button>
+  </figcaption>
+</figure>
