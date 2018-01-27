@@ -20,10 +20,9 @@ export class LetterComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-
+    console.log('lifetime: ' + ((new Date().getTime() - this.initTime.getTime()) / 1000) + ' second');
   }
   emitDeleting() {
     this.selectToDelete.emit(this.letter.id);
-    console.log('lifetime: ' + ((new Date().getTime() - this.initTime.getTime()) / 1000) + ' seconds');
   }
 }
