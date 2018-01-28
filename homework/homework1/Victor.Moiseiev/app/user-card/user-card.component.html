@@ -1,0 +1,14 @@
+<h1>=========</h1>
+<div [style.backgroundColor] = "color">
+  <p>
+    <img [src]="user.photoUrl" />
+  </p>
+  <p>
+    Name: {{user.name}}
+  </p>
+  <p>
+    Position: {{user.position}}
+  </p>
+</div>
+<button (click)="changeColor()"></button>
+<br/>

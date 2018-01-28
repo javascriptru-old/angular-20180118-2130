@@ -1,0 +1,11 @@
+<div *ngFor="let item of users">
+  <p style.background-color={{item?.background}}>
+    {{item?.name}}
+    <br />
+    <img src={{item?.photo}}>
+    <span class="details">Birthday: {{item?.birthday}}</span>
+    <span class="details">Model: {{item?.model}}</span>
+    <br />
+    <button (click)="changeBackground(item)">Background</button>
+  </p>
+</div>

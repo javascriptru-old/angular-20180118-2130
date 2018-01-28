@@ -1,0 +1,16 @@
+<section class="dashboard">
+  <div class="container">
+    <div class="dashboard__content">
+
+      <h1 class="dashboard__title">Users List</h1>
+      <button type="button" class="dashboard__start" (click)="showUsers = true">Get users</button>
+
+    </div>
+
+    <div class="dashboard__user-list" *ngIf="showUsers">
+        <div class="dashboard__user-list-item" *ngFor="let user of users">
+            <user-card [user]="user"></user-card>
+        </div>
+    </div>
+  </div>
+</section>

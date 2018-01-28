@@ -1,0 +1,29 @@
+:host {
+  display: inline-block;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #6363cb;
+  border-radius: 3px;
+  background: #fff;
+
+  &__info-field {
+    font-size: 18px;
+  }
+
+  &__btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    font: inherit;
+    color: #fff;
+    background-color: #6363cb;
+    cursor: pointer;
+  }
+}
