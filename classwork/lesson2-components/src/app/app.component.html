@@ -1,0 +1,19 @@
+<app-item appLogClick (xxx)="dosomething($event)" [id]="1"></app-item>
+<app-item appLogClick (xxx)="dosomething($event)" [id]="2"></app-item>
+<app-item appLogClick (xxx)="dosomething($event)" [id]="3"></app-item>
+<app-item appLogClick (xxx)="dosomething($event)" [id]="4"></app-item>
+
+<div *ngIf="showBlock">
+  BLOCK
+</div>
+
+
+
+<!-- <ul>
+  <li *ngFor="let user of users">
+    <user-card [user]="user" (delete)="delete($event)"></user-card>
+  </li>
+</ul> -->
+
+
+<!-- <user-card *ngFor="let user of users" [user]="user"></user-card> -->
