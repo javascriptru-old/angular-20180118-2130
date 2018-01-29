@@ -1,0 +1,9 @@
+h1 {
+    display: block;
+    border: none;
+    color: crimson;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 16px;
+}
