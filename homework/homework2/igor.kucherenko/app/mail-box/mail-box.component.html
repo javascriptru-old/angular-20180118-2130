@@ -1,0 +1,6 @@
+<div class="mail-box" *ngIf="mails?.length">
+  <app-mail-item *ngFor="let mail of mails"
+                 [mail]="mail"
+                 (onDelete)="deleteMailItem($event)">
+  </app-mail-item>
+</div>
