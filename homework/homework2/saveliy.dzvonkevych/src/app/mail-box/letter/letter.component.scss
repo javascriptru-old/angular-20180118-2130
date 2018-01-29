@@ -1,0 +1,30 @@
+.letter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+
+  &:hover {
+    background-color: #f9f9f9;
+  }
+
+  > * + * + {
+    margin-left: 20px;
+  }
+
+  &-meta,
+  &-control {
+    display: flex;
+    align-items: center;
+
+    > * + * {
+      margin-left: 20px;
+    }
+  }
+
+  &-control {
+    button {
+      cursor: pointer;
+    }
+  }
+}
