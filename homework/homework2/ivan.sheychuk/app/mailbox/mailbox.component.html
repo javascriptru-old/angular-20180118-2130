@@ -1,0 +1,4 @@
+<h1>
+  My Mailbox
+</h1>
+<app-letter *ngFor="let letter of mailList" [letter]="letter" (delete)="deleteLetter($event)"></app-letter>
