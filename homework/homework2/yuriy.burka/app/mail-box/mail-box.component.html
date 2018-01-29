@@ -1,0 +1,6 @@
+<h1 class="stamp">Letters:</h1>
+<div>
+    <div class="frame" *ngFor="let letter of letters">
+        <app-mail [letter]=letter (deleteEvent)="remove($event)"></app-mail>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="mail-item">
+  <div class="mail-item__item">
+    <div class="mail-item__title">
+      {{ 'Письмо' + '#' + mailItem.id }}
+    </div>
+
+    <div class="mail-item__date-wrap">
+      <div class="mail-item__date-title">Получено: </div>
+      <div class="mail-item__date">{{ mailItem.createdAt }}</div>
+    </div>
+
+    <button type="button" class="mail-item__close" (click)="destroy(mailItem)"></button>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="message">
+  <div class="message__time">{{parseMessageTime(data.time)}}</div>
+  <div class="message__from">{{data.from}}</div>
+  <div class="message__title">{{data.title}}</div>
+  <div class="message__body">{{data.body}}</div>
+  <div class="message__button">
+    <button type="button" (click)="onRemove()">delete</button>
+  </div>
+</div>
+<hr class="divider">

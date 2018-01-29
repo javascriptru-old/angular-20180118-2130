@@ -1,0 +1,8 @@
+<div class="container">
+  <ng-container *ngIf="usersList && usersList.length; else elseBlock">
+    <gc-user-card *ngFor="let userInfo of usersList" [user]="userInfo"></gc-user-card>
+  </ng-container>
+  <ng-template #elseBlock>
+    No users found
+  </ng-template>
+</div>
