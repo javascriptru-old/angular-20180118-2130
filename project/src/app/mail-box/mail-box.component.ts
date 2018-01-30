@@ -1,31 +1,30 @@
-import { Component, OnInit } from '@angular/core';
-import { MailInfo } from '../mail-info';
+import { Component, OnInit, Input } from '@angular/core';
+import { Letter } from '../letter';
 
 @Component({
   selector: 'app-mail-box',
   template:
-    `<app-mail *ngFor="let mail of mails"
-    [mail]="mail"
+    `<app-mail *ngFor="let letter of letters"
+    [mail]="letter"
     (clearMail)="clearMail($event)"></app-mail>`
 })
 export class MailBoxComponent implements OnInit {
 
-  mails: MailInfo[] = [];
+  @Input() letters: Letter[] = [];
   constructor() { }
 
   ngOnInit() {
-    setInterval(this.newMail.bind(this), 3000);
-    setInterval(this.newMail.bind(this), 5000);
+
   }
 
   newMail() {
-    this.mails = this.mails
-      .concat(new MailInfo())
+    this.letters = this.letters
+      .concat(new Letter())
       .sort((a, b) => b.received.valueOf() - a.received.valueOf());
   }
 
-  clearMail(mail: MailInfo) {
-    this.mails = this.mails.filter(m => m !== mail);
+  clearMail(letter: Letter) {
+    this.letters = this.letters.filter(m => m !== letter);
   }
 
 }

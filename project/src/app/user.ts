@@ -1,16 +1,17 @@
+
+enum Gender { M, F }
+
 export class User {
+    id?: number;
+    fullName: string;
+    email: string;
+    avatarUrl?: string;
+    birthdate?: Date;
+    gender?: Gender;
+    address?: string;
 
-    id: number;
-    fullname: string;
-
-    constructor(
-        private fname: string,
-        private lname: string,
-        private mname?: string,
-        private post?: string,
-        private about?: string,
-        private avatar?: string
-    ) {
-        this.fullname = `${fname} ${mname} ${lname}`;
+    constructor(fullName: string, email: string) {
+        this.fullName = fullName;
+        this.email = email;
     }
 }

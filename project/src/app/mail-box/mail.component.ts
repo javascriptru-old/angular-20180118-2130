@@ -1,5 +1,5 @@
 import { Component, Input, EventEmitter, Output, OnDestroy } from '@angular/core';
-import { MailInfo } from '../mail-info';
+import { Letter } from '../letter';
 
 @Component({
   selector: 'app-mail',
@@ -12,8 +12,8 @@ div button { flex: 0 1 100px; }`
 })
 export class MailComponent implements OnDestroy {
 
-  @Input() mail: MailInfo;
-  @Output() clearMail: EventEmitter<MailInfo> = new EventEmitter<MailInfo>();
+  @Input() mail: Letter;
+  @Output() clearMail: EventEmitter<Letter> = new EventEmitter<Letter>();
   constructor() { }
 
   clear() {
