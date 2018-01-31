@@ -1,5 +1,6 @@
 
 export class Mailbox {
+    _id?: string;
     title: string;
     constructor(title: string) {
         this.title = title;
@@ -8,7 +9,7 @@ export class Mailbox {
 
 interface LetterInfo {
     id?: number;
-    ObjectId: number;
+    mailbox: string;
     subject: string;
     body: string;
     to: string;
@@ -16,19 +17,19 @@ interface LetterInfo {
 }
 
 export class Letter {
-    id?: number;
-    ObjectId: number;
+    _id?: number;
+    mailbox: string;
     subject: string;
     body: string;
     to: string;
     received?: Date;
 
     constructor(options: LetterInfo) {
-        this.id = options.id;
-        this.ObjectId = options.ObjectId;
+        this._id = options.id;
+        this.mailbox = options.mailbox;
         this.subject = options.subject;
         this.body = options.body;
         this.to = options.to;
-        this.received = options.received;
+        this.received = new Date;
     }
 }

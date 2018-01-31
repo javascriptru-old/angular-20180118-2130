@@ -2,7 +2,7 @@
 enum Gender { M, F }
 
 export class User {
-    id?: number;
+    _id?: string;
     fullName: string;
     email: string;
     avatarUrl?: string;

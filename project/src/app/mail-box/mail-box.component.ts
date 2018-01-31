@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Letter } from '../letter';
+import { LettersService } from '../letters.service';
 
 @Component({
   selector: 'app-mail-box',
@@ -11,20 +12,22 @@ import { Letter } from '../letter';
 export class MailBoxComponent implements OnInit {
 
   @Input() letters: Letter[] = [];
-  constructor() { }
+  constructor(
+    private letterService: LettersService
+  ) { }
 
   ngOnInit() {
 
   }
 
   newMail() {
-    this.letters = this.letters
-      .concat(new Letter())
-      .sort((a, b) => b.received.valueOf() - a.received.valueOf());
+    // this.letters = this.letters
+    //   .concat(new Letter())
+    //   .sort((a, b) => b.received.valueOf() - a.received.valueOf());
   }
 
   clearMail(letter: Letter) {
-    this.letters = this.letters.filter(m => m !== letter);
+    this.letterService.clear(letter).subscribe(_ => this.letters = this.letters.filter(m => m !== letter));
   }
 
 }

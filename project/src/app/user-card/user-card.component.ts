@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { User } from '../user';
+import { UsersService } from '../users.service';
 
 @Component({
   selector: 'app-user-card',
@@ -9,7 +10,10 @@ import { User } from '../user';
 export class UserCardComponent implements OnInit {
 
   @Input() user: User;
-  constructor() { }
+  @Output() clearUserEve: EventEmitter<User> = new EventEmitter<User>();
+  constructor(
+    private userService: UsersService
+  ) { }
 
   ngOnInit() {
   }
@@ -21,6 +25,10 @@ export class UserCardComponent implements OnInit {
       color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
+  }
+
+  clearUser() {
+    this.clearUserEve.emit(this.user);
   }
 
   randomColor(card) {

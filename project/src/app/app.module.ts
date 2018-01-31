@@ -9,6 +9,8 @@ import { MailBoxComponent } from './mail-box/mail-box.component';
 import { MailComponent } from './mail-box/mail.component';
 import { UsersService } from './users.service';
 import { LettersService } from './letters.service';
+import { LoggingService } from './logging.service';
+import { AuthoriseService } from './authorise.service';
 
 
 
@@ -25,7 +27,9 @@ import { LettersService } from './letters.service';
   ],
   providers: [
     UsersService,
-    LettersService
+    LettersService,
+    LoggingService,
+    AuthoriseService
   ],
   bootstrap: [AppComponent]
 })

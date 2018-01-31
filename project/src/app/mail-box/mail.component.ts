@@ -3,7 +3,10 @@ import { Letter } from '../letter';
 
 @Component({
   selector: 'app-mail',
-  template: '<div><span>new mail {{ mail.received.toLocaleTimeString() }} </span><button (click)="clear()">clear</button></div>',
+  template: `<div>
+  <b>{{ mail.subject }}</b> <span>[{{ mail.to }}] - {{ mail.received.toLocaleTimeString() }}</span>
+  <button (click)="clear()">clear</button>
+  </div>`,
   styles: [
     `div { border: solid 1px #cccccc; padding: 4px 8px; margin: 2px; display: flex; background-color: #eee;}
 div span {flex: 1 0 auto;}
