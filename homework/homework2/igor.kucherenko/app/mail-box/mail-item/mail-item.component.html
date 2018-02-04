@@ -1,0 +1,6 @@
+<div class="message" [class.message--new]="isNewItem">
+  <span class="message__info">From: {{senderFullName}}</span>
+  <span class="message__info">Received: {{formattedDate}}</span>
+
+  <button class="btn" (click)="handleDeleteBtnClick()">Delete</button>
+</div>

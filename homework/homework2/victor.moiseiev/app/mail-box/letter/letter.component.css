@@ -1,0 +1,11 @@
+:host {
+  display: table-row;
+}
+
+:host:hover {
+  color: red;
+}
+
+td {
+  width: 200px;
+}

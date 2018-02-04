@@ -1,0 +1,40 @@
+.mail-item {
+    &__item {
+        position: relative;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        font-size: 14px;
+
+        &:hover {
+            background: #eee;
+        }
+    }
+
+    &__date-wrap {
+        text-align: right;
+    }
+
+    &__close {
+        background: none;
+        border: none;
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0;
+        right: 0;
+        transform: rotate(45deg);
+        cursor: pointer;
+
+
+        &::before {
+            content: '+';
+
+        }
+    }   
+}
