@@ -1,0 +1,6 @@
+<button *ngIf="autorizationService.isAutorized" (click)="autorizationService.isAutorized = false">Logout</button>
+<button *ngIf="!autorizationService.isAutorized" (click)="autorizationService.isAutorized = true">Login</button>
+
+<div class="clearfix"><app-user-card *ngFor="let user of users" [user]="user"></app-user-card></div>
+
+<app-mail-box *ngIf="autorizationService.isAutorized"></app-mail-box>
