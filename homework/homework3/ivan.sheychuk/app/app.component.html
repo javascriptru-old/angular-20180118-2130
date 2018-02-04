@@ -1,0 +1,12 @@
+<button (click)="switchAuth()">
+    <span *ngIf="!showMails">Login</span>
+    <span *ngIf="showMails">Logout</span>
+</button>
+<hr>
+<h1>Users</h1>
+<app-user-list></app-user-list>
+<hr>
+<div *ngIf="showMails">
+    <h1>Mailbox</h1>
+    <app-mailbox></app-mailbox>
+</div>
