@@ -1,0 +1,18 @@
+.app {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  &__letters {
+    width: 100%;
+    max-width: 80%;
+    box-sizing: border-box;
+    padding-right: 2px;
+  }
+
+  &__contacts {
+    flex-basis: 20%;
+  }
+}
