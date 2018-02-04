@@ -1,0 +1,8 @@
+<div class="user-card">
+  <img class="user-card__avatar" [src]="data.avatarUrl"/>
+  <div class="user-card__description">
+    <button class="user-card__button" (click)="color = getRandomColor()" [style.background-color]="color">Change color</button>
+    <div class="user-card__name">{{data.fullName}}</div>
+    <div><a class="user-card__email" [href]="'mailto:' + data.email">{{data.email}}</a></div>
+  </div>
+</div>
