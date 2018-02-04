@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-40">
+            <div class="col-content" *ngIf="loggedIn">
+                <app-new-letter [currentUser]="currentUser"></app-new-letter>
+            </div>
+            <div class="col-content" *ngIf="!loggedIn">
+                <app-sign-up></app-sign-up>
+            </div>
+            <div class="col-content" *ngIf="!loggedIn">
+                <app-users
+                        (deleteUserEvent)="deleteUser($event)"
+                        (logInUserEvent)="logInUser($event)"
+                        [users]="users"></app-users>
+            </div>
+        </div>
+        <div class="col-60">
+            <div class="col-content" *ngIf="loggedIn">
+                <app-mail-list [currentUser]="currentUser.id"></app-mail-list>
+            </div>
+        </div>
+    </div>
+</div>
