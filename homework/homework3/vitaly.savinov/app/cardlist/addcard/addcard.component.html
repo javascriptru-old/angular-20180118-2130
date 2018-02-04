@@ -1,0 +1,42 @@
+<div>
+  <table>
+    <tr>
+      <td width=34%>
+          Name:
+      </td>
+      <td>
+          <input type="text" size="24" maxlength="128" #inName>
+      </td>
+    </tr>
+    <tr>
+        <td width=34%>
+            Birthday:
+        </td>
+        <td>
+            <input type="date" #inBirthday>
+        </td>
+      </tr>
+      <tr>
+          <td width=34%>
+              Photo URL:
+          </td>
+          <td>
+              <input type="text" size="24" maxlength="128" #inPhoto>
+          </td>
+      </tr>
+      <tr>
+        <td width=34%>
+            Model:
+        </td>
+        <td>
+            <input type="text" size="24" maxlength="128" #inModel>
+        </td>
+    </tr>
+  </table>
+  <button (click)="addCard(inName.value, inBirthday.value, inPhoto.value, inModel.value); 
+                   inName.value = ''; 
+                   inBirthday.value ='';
+                   inPhoto.value = '';
+                   inModel.value = ''">Add Card</button>
+</div>
+
