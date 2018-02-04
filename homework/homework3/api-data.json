@@ -1,0 +1,47 @@
+{
+    "mailboxes": [
+        {
+            "title": "ivanov.mailbox"
+        },
+        {
+            "title": "petrov.mailbox"
+        },
+        {
+            "title": "sidorov.mailbox"
+        }
+    ],
+    "users": [
+        {
+            "fullName": "Ivanov",
+            "email": "ivanov@e1.ru"
+        },
+        {
+            "fullName": "Petrov",
+            "email": "petrov@e1.ru"
+        },
+        {
+            "fullName": "Sidorov",
+            "email": "sidorov@e1.ru"
+        }
+    ],
+    "letters": [
+        {
+            "mailbox": "5a760be17f0d1fac2ba8841c",
+            "subject": "Заказ пиццы",
+            "body": "Заказ оплачен",
+            "to": "ivanov@e1.ru"
+        },
+        {
+            "mailbox": "5a760be17f0d1fac2ba8841d",
+            "subject": "Заказ носков",
+            "body": "Заказ оплачен, носки придут почтой",
+            "to": "petrov@e1.ru"
+        },
+        {
+            "mailbox": "5a760be17f0d1fac2ba8841e",
+            "subject": "Заказ автозапчастей",
+            "body": "Заказ принят, ждите",
+            "to": "sidorov@e1.ru"
+        }
+    ]
+}
