@@ -5,13 +5,14 @@
                 <app-new-letter [currentUser]="currentUser"></app-new-letter>
             </div>
             <div class="col-content" *ngIf="!loggedIn">
-                <app-sign-up></app-sign-up>
+                <app-sign-up (update)="updateUsers()"></app-sign-up>
             </div>
             <div class="col-content" *ngIf="!loggedIn">
                 <app-users
                         (deleteUserEvent)="deleteUser($event)"
                         (logInUserEvent)="logInUser($event)"
-                        [users]="users"></app-users>
+                        [users]="users"
+                ></app-users>
             </div>
         </div>
         <div class="col-60">

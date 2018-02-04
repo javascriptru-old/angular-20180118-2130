@@ -3,7 +3,8 @@
         <app-mail
                 [mail]="mail"
                 [id]="mailsIds[i]"
-                (deleteLetter)="deleteLetter($event)"></app-mail>
+                (deleteLetter)="deleteLetter($event)"
+        ></app-mail>
     </div>
 </div>
 <div *ngIf="!isLetters">{{placeholderMessage}}</div>

@@ -7,8 +7,7 @@ import { UsersService } from '../users.service';
   styleUrls: ['./sign-up.component.scss']
 })
 export class SignUpComponent implements OnInit {
-  @Output() updateUsers: EventEmitter<any>;
-  public update: EventEmitter<any> = new EventEmitter();
+  @Output() update: EventEmitter<boolean> = new EventEmitter();
   public formData: { name: string, title: string, thumb: string } = {
     name: '',  title: '', thumb: 'https://placeholdit.co/i/60x60'
   };
@@ -30,6 +29,8 @@ export class SignUpComponent implements OnInit {
               throw new Error('All the fields required');
           }
         });
-    this.userService.add(this.formData).subscribe(response => this.update.emit(response.json()));
+    this.userService.add(this.formData).subscribe(() => {
+        this.update.emit(true);
+    });
   }
 }
