@@ -1,0 +1,50 @@
+div {
+    border: 1px solid crimson;
+    width: 730px;
+    padding: 4px 8px;
+    margin: 0 auto;
+}
+
+.list {
+    border: none;
+}
+
+.head {
+    display: inline-block;
+    padding: 0 0 8px 0;
+    margin: 0 0 8px 0;
+    border: none;
+    border-bottom: 1px solid crimson;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.from {
+    width: 200px;
+    min-width: 200px;
+    margin-bottom: 8px;
+    border-right: 1px solid crimson;
+}
+
+.subject {
+    width: 290px;
+    min-width: 290px;
+    margin-bottom: 8px;
+    border-right: 1px solid crimson;
+}
+
+.date {
+    width: 190px;
+    min-width: 190px;
+    margin-bottom: 8px;
+}
+
+.action {
+    width: 20px;
+    min-width: 20px;
+    margin-bottom: 8px;
+    border: none;
+}

@@ -1,0 +1,3 @@
+<div class="mail-box">
+  <app-message *ngFor="let item of messages" [data]="item" (remove)="removeMessage($event)"></app-message>
+</div>
