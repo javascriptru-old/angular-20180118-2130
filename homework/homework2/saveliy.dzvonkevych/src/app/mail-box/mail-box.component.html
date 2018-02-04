@@ -1,0 +1,16 @@
+<section class="mailbox">
+  <header class="mailbox-header">
+    <h1>MailBox</h1>
+  </header>
+
+  <main class="mailbox-body">
+    <div class="mailbox-letters">
+      <app-letter
+        *ngFor="let data of letters; let i = index;"
+        [index]="i"
+        [data]="data"
+        (delete)="deleteLetter($event)"
+        ></app-letter>
+    </div>
+  </main>
+</section>

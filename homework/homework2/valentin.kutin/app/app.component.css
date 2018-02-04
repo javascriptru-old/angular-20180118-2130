@@ -1,0 +1,14 @@
+.inner {
+  max-width: 1024px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility !important;
+}
