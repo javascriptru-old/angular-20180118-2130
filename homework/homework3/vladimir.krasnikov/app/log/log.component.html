@@ -1,0 +1,8 @@
+<h4>
+  Application Logs
+</h4>
+<div *ngIf="logService.records.length">
+  <div *ngFor="let record of logService.records">{{record.timestamp | date: 'yyyy-MM-dd hh:mm:ss'}}&nbsp;&nbsp;&nbsp;{{record.record}}</div>
+  <br />
+  <button class="clear" (click)="logService.clear()">Clear</button>
+</div>

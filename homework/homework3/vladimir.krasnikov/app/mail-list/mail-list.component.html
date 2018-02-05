@@ -1,0 +1,35 @@
+<div class="wrapper">
+    <h3>
+        {{ title }}
+    </h3>
+<div class="table">
+    
+  <div class="row header blue">
+    <div class="cell">
+      To
+    </div>
+    <div class="cell">
+      Subject
+    </div>
+    <div class="cell">
+      Delete
+    </div>
+  </div>
+  
+    <div class="row" *ngFor="let mail of mails; let i = index;">
+    <div class="cell">
+      {{mail.to}}
+    </div>
+    <div class="cell">
+      {{mail.subject}}
+    </div>
+    <div class="cell">
+      <button (click) = "deleteMessage(i)">Delete</button>
+    </div>
+  </div>
+  
+  </div>
+  
+  <button (click) = "addTestMessages()">Add Test Messages</button>
+
+</div>
