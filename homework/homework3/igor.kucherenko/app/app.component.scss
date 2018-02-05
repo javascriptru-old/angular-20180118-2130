@@ -1,0 +1,14 @@
+:host {
+  display: block;
+}
+
+.app-component {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1000px;
+    border-top: none;
+    background-color: #f8f8f8;
+  }
+}

@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+.app-header {
+  display: flex;
+  background-color: #26386f;
+
+  &__authorization-block {
+    margin-left: auto;
+  }
+}

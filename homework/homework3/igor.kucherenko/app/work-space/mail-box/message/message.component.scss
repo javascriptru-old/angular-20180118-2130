@@ -1,0 +1,41 @@
+:host {
+  display: inline-block;
+}
+
+.message {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid #695b5b;
+  border-radius: 3px;
+  background-color: #dfe3f3;
+
+  &__info-box {
+    margin-bottom: 10px;
+  }
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #c1c1c1;
+
+  &__field {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
+.message-content {
+  padding: 0 10px;
+
+  &__subject {
+    font-size: 14px;
+  }
+
+  &__body {
+    font-size: 12px;
+  }
+}
