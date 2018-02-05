@@ -1,0 +1,24 @@
+
+<button (click)='logIn()' *ngIf="!isAuth"> Log in </button>
+
+<div id="workinArea" *ngIf="isAuth" >
+  <button (click)='logOut()' > Log out </button>
+
+  <table>
+  <tr>
+    <td>
+      Contacts
+      <ul>
+        <li *ngFor="let user of users">
+          {{ user.fullName }}
+        </li>
+      </ul>
+    </td>
+    <td>
+      <app-mailbox [mailBoxTitle]="mailbox.title" [letters]="letters"></app-mailbox>
+    </td>
+  </tr>
+</table>
+</div>
+
+
