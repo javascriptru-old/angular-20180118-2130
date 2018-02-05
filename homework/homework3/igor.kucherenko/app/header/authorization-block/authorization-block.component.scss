@@ -1,0 +1,22 @@
+:host {
+  display: inline-block;
+}
+
+.authorization-block {
+  display: flex;
+  margin-left: auto;
+  padding: 20px;
+  width: 100px;
+  border-left: 1px solid #ff8839;
+
+  &__login-btn {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ff8839;
+    color: #fff;
+    cursor: pointer;
+  }
+}

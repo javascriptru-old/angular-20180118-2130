@@ -1,0 +1,12 @@
+<div class="contact-card">
+  <div class="contact-card__avatar-box">
+    <img class="contact-card__avatar-img"
+         [src]="user.avatar"
+         [title]="user.name">
+  </div>
+  <div class="contact-card__info-box">
+    <span class="contact-card__info-field contact-card__info-field--name">{{user.name}}</span>
+    <span class="contact-card__info-field">email: {{user.email}}</span>
+  </div>
+  <button class="contact-card__delete-btn" (click)="deleteItem(user)">x</button>
+</div>
