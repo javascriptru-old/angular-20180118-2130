@@ -1,0 +1,14 @@
+<div>
+    <button (click)="getUsers()">Users</button>
+    <button (click)="getLetters()">Letters</button>
+    <button (click)="login()">{{ isAuthorise?'Logout':'Login' }}</button>
+</div>
+
+<div class="users">
+    <app-user-card *ngFor="let user of users" [user]="user"
+    (clearUserEve)="clearUser($event)"></app-user-card>
+</div>
+
+<app-mail-box *ngIf="isAuthorise" [letters]="letters"></app-mail-box>
+
+<app-add-user></app-add-user>

@@ -1,0 +1,5 @@
+form {padding: 20px;}
+form div {padding: 8px 0;margin-bottom:8px;}
+form div label {display: inline-block; min-width: 120px;}
+
+input.ng-invalid, select.ng-invalid {border: solid 1px red;}
