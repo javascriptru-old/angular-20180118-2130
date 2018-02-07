@@ -1,0 +1,10 @@
+.users {
+  > * + * {
+    border-top: 1px solid #eee;
+  }
+
+  &__item {
+    display: block;
+    padding: 10px 0;
+  }
+}

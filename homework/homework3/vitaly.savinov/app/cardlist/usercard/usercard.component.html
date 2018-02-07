@@ -1,0 +1,10 @@
+<p *ngIf="card">
+  {{card?.fullName}}
+  <br />
+  <img src={{card?.avatarUrl}} width="90" height="100">
+  <span class="details">Birthdate: {{card?.birthdate | date:'dd.MM.yyyy'}}</span>
+  <br />
+  <span class="details">Model: {{card?.address}}</span>
+  <br />
+  <button (click)="delete(card)">Delete</button>
+</p>

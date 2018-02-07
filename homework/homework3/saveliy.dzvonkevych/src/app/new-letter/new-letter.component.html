@@ -1,0 +1,19 @@
+<form name="new-letter" class="form" (submit)="onSubmit($event)">
+    <div class="form-item">
+        <select name="receiver">
+            <option *ngFor="let user of users; let i = index;" [value]="usersIds[i]">{{user.name}}</option>
+        </select>
+    </div>
+
+    <div class="form-item">
+        <input type="text" name="title" placeholder="Title of this letter">
+    </div>
+
+    <div class="form-item form-item__textarea">
+        <textarea name="body" placeholder="Your message..."></textarea>
+    </div>
+
+    <div class="form-item">
+        <button type="submit">Send</button>
+    </div>
+</form>

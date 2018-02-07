@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex-grow: 1;
+}
+
+.mail-box {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #e7eaf3;
+
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  &__message {
+    margin-bottom: 5px;
+  }
+}

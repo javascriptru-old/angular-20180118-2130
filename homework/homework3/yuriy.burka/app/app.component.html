@@ -1,0 +1,18 @@
+<h1>Mailbox</h1>
+<div *ngIf="!currentUser()">
+  <div>User:
+    <select #selected>
+      <option *ngFor="let user of users" [value]="user.login">
+        {{user.fullname}}
+      </option>
+    </select>
+    <button (click)="login(selected.value)">Login</button>
+  </div>
+</div>
+<div *ngIf="currentUser()">
+  <div>Letters of <strong>{{currentUser().fullname}}</strong>
+      <button (click)="logout()">Logout</button>
+  </div>
+  <app-received></app-received>
+  <app-sent></app-sent>
+</div>

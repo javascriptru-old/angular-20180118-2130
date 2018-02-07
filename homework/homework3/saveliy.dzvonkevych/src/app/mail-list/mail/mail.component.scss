@@ -1,0 +1,17 @@
+.mail {
+  display: flex;
+  align-items: center;
+
+  > * + * {
+    margin-left: 10px;
+  }
+
+  &--meta {
+    display: flex;
+    align-items: center;
+
+    > * + * {
+      margin-left: 10px;
+    }
+  }
+}

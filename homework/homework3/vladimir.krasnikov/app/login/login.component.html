@@ -1,0 +1,2 @@
+<div *ngIf="isAuthenticated">Hello {{userName}}! <button (click)="signOut()">Sign Out</button></div>
+<div *ngIf="!isAuthenticated">Please sign in to continue: <button (click)="signIn()">Sign In</button></div>

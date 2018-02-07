@@ -1,0 +1,11 @@
+<div class="mailbox">
+  <div class="mailbox-header">
+      <h1>Mailbox</h1>
+  </div>
+
+  <div class="mailbox-body">
+      <app-letter *ngFor="let letter of letters; let id = index"
+      [index] = "id" [letter] = "letter"
+      (remove)="removeLetter($event)"></app-letter>
+  </div>
+</div>

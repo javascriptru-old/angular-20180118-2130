@@ -1,0 +1,15 @@
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { Observable } from "rxjs/Observable";
+
+@Injectable()
+export class LetterService {
+
+  constructor(private readonly httpclient: HttpClient) { }
+
+
+  getLetters(): Observable<Letter[]> {
+    return this.httpclient.get<Letter[]>(`http://test-api.javascript.ru/v1/victorm/letters`);
+  }
+
+}
