@@ -1,0 +1,11 @@
+<p *ngIf="card">
+  {{card?.fullName}} {{card?.address}}
+  <br />
+  <span class="details"><b>Gender:</b> {{card?.gender}}</span>
+  <br />
+  <span class="details"><b>Birthdate:</b> {{card?.birthdate | date:'dd.MM.yyyy'}}</span>
+  <br />
+  <span class="details"><b>E-mail:</b> {{card?.email}}</span>
+  <br />
+  <button (click)="delete(card)">Delete</button>
+</p>
