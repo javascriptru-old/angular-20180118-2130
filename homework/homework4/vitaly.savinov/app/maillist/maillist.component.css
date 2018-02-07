@@ -1,0 +1,108 @@
+div {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px dotted crimson;
+    width: 900px;
+    padding: 2px 4px;
+    margin: 16px 0 0 6px;
+}
+
+h1 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: crimson;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    text-align: center;    
+}
+
+.list {
+    border: none;
+    margin: 0;
+}
+
+.head {
+    display: inline-block;
+    padding: 8px 0 8px 0;
+    margin: 16px 0 16px 0;
+    border: none;
+    border-top: 1px solid crimson;
+    border-bottom: 1px solid crimson;
+    color: crimson;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.to {
+    width: 140px;
+    min-width: 140px;
+    margin-bottom: 8px;
+    border-right: 1px solid crimson;
+}
+
+.subject {
+    width: 270px;
+    min-width: 270px;
+    margin-bottom: 8px;
+    border-right: 1px solid crimson;
+}
+
+.body {
+    width: 450px;
+    min-width: 450px;
+    margin-bottom: 8px;
+}
+
+.action {
+    width: 20px;
+    min-width: 20px;
+    margin-bottom: 8px;
+    border: none;
+}
+
+.add {
+    border: none;
+    margin: 0 0 10px 0;
+}
+
+.login {
+    border: none;
+    margin: 0 10px 10px 24px;
+    padding: 4px 12px;
+    border: 1px solid forestgreen;
+    background-color: forestgreen;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.logout {
+    border: none;
+    margin: 0 10px 10px 0px;
+    padding: 4px 12px;
+    border: 1px solid crimson;
+    background-color: crimson;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.in {
+    color: forestgreen;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.out {
+    color: crimson;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+}

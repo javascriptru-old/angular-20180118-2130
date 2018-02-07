@@ -1,0 +1,50 @@
+<div>
+  <table>
+    <tr>
+        <td width=34%>
+            Name:
+        </td>
+        <td>
+            <input [formControl]="nameControl" type="text" size="24" maxlength="128">
+        </td>
+    </tr>
+    <tr>
+        <td width=34%>
+            Surname:
+        </td>
+        <td>
+            <input [formControl]="surnameControl" type="text" size="24" maxlength="128">
+        </td>
+    </tr>
+    <tr>
+        <td width=34%>
+            Gender:
+        </td>
+        <td>
+            <input [formControl]="genderControl" type="text" size="1" maxlength="1">
+        </td>
+    </tr>
+    <tr>
+        <td width=34%>
+            Birthday:
+        </td>
+        <td>
+            <input type="date"  [formControl]="dateControl">
+        </td>
+    </tr>
+    <tr>
+        <td width=34%>
+            E-mail:
+        </td>
+        <td>
+            <input type="email" size="24" maxlength="128"  [formControl]="emailControl">
+        </td>
+    </tr>
+  </table>
+  <button (click)="addCard( nameControl.value, 
+                            surnameControl.value, 
+                            genderControl.value, 
+                            dateControl.value, 
+                            emailControl.value )">Add Card</button>
+</div>
+
