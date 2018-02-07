@@ -1,0 +1,55 @@
+.user-card {
+  position: relative;
+  background-color: #fafafa;
+
+  &__avatar {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    overflow: hidden;
+  }
+
+  &__description {
+    padding: 10px 10px 10px 86px;
+    line-height: 1.2em;
+  }
+
+  &__name {
+    padding-top: 4px;
+    font-size: 110%;
+    font-weight: 500;
+  }
+
+  &__email {
+    font-size: 80%;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.56);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__property {
+    font-size: 80%;
+  }
+
+  &__button {
+    height: 20px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 70%;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+
+    &:active {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+  }
+}
