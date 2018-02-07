@@ -1,0 +1,9 @@
+<div style="background-color: lightgrey">
+  Mailbox: {{ mailBoxTitle }}
+  <p></p>
+  <table>
+    <tr *ngFor="let letter of letters">
+      <app-mail [letter]="letter"></app-mail>
+    </tr>
+  </table>
+</div>

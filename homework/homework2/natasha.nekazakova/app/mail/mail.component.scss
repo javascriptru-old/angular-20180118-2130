@@ -1,0 +1,49 @@
+:host {
+  &:last-child {
+    .mail:last-child {
+      border: none;
+    }
+  }
+
+  .mail {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+    cursor: pointer;
+    margin: 0 20px;
+
+    div {
+      padding-right: 20px;
+    }
+
+    &-head {
+      margin: 0;
+      padding: 20px;
+      font-weight: 700;
+      border-color: #777777;
+
+      &:last-child {
+        border-color: #777777;
+      }
+    }
+
+    &-number {
+      width: 80px;
+    }
+
+    &-actions {
+      width: 160px;
+    }
+
+    &-received,
+    &-author {
+      width: 150px;
+      padding-right: 20px;
+    }
+
+    &-subject {
+      display: flex;
+      flex: 1 0 auto;
+    }
+  }
+}
