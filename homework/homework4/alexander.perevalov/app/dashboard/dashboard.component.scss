@@ -1,0 +1,44 @@
+.dashboard {
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        font-family: monospace;
+        font-size: 30px;
+        background: #eee;
+        padding: 10px;
+    }
+
+    &__start {
+        border: none;
+        padding: 15px 20px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: monospace;
+        font-size: 13px;
+        background: none;
+
+        &:hover,
+        &:focus {
+            background-color: #eee;
+            color: #000;
+        }
+    }
+
+    &__user-list-item {
+        display: flex;
+        width: 33.33333%;
+        padding: 10px 20px;
+    }
+
+    &__user-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-top: 30px;
+    }
+}

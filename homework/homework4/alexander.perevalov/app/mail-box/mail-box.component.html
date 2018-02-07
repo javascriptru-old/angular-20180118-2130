@@ -1,0 +1,14 @@
+<div class="mail-box">
+  <div class="mail-box__content">
+    <h2>Почта</h2>
+    <div class="mail-box__placeholder" *ngIf="letters && !isAuthorize()">
+      Вы можете увидеть список писем после <a href="#" (click)="login()">авторизации</a>
+    </div>
+
+    <div class="mail-box__list" *ngIf="letters && isAuthorize()">
+      <mail-item *ngFor="let letter of letters" [letter]="letter"></mail-item>
+      <br>
+      <a href="#" (click)=logout()>Выйти</a>
+    </div>
+  </div>
+</div>
