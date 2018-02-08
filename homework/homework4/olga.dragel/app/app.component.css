@@ -1,0 +1,16 @@
+
+.ng-valid{
+  border: 2px solid green;
+}
+
+.ng-invalid{
+  border: 2px solid red;
+}
+
+.fieldset {
+  border: 2px solid grey;
+}
+
+.ng-untouched {
+  border: 2px solid grey;
+}
