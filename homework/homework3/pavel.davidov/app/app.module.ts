@@ -24,12 +24,8 @@ import { AuthoriseService } from './authorise.service';
   ],
   imports: [
     BrowserModule,
-<<<<<<< HEAD:homework/homework3/pavel.davidov/app/app.module.ts
     HttpClientModule
-=======
-    HttpClientModule,
-    ReactiveFormsModule
->>>>>>> project:project/src/app/app.module.ts
+    HttpClientModule
   ],
   providers: [
     UsersService,
