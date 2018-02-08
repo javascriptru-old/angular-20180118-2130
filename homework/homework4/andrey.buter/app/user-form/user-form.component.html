@@ -1,0 +1,30 @@
+<form action="" [formGroup]="addUserForm" (submit)="onSubmit()">
+  <div>
+    <label for="">First Name</label><br>
+    <input type="text" formControlName="firstName">
+    <div style="color:red">{{ errors.firstName }}</div>
+  </div>
+  <div>
+    <label for="">Last Name</label><br>
+    <input type="text" formControlName="lastName">
+    <div style="color:red">{{ errors.lastName }}</div>
+  </div>
+  <div>
+    <label for="">Sex</label><br>
+    <input type="text" formControlName="sex">
+    <div style="color:red">{{ errors.sex }}</div>
+  </div>
+  <div>
+    <label>Birth date</label><br>
+    <input type="date" formControlName="birthDate">
+    <div style="color:red">{{ errors.birthDate }}</div>
+  </div>
+  <div>
+    <label for="">Email</label><br>
+    <input type="email" formControlName="email">
+    <div style="color:red">{{ errors.email }}</div>
+  </div>
+  <div>
+    <button type="submit" [disabled]="addUserForm.invalid">Submit</button>
+  </div>
+</form>
