@@ -1,0 +1,16 @@
+<div class="user">
+    <div class="user--thumb">
+        <img src="{{user.thumb}}" class="user--thumb__img">
+    </div>
+
+    <div class="user--meta">
+        <h4 class="user--name">{{user.name}} |
+            <a href="javascipt:" (click)="toggleLogIn($event)">
+                <span>Log in</span>
+            </a>
+            |
+            <a href="javascript:" (click)="delete($event)">Delete</a>
+        </h4>
+        <p class="user--title">{{user.title}}</p>
+    </div>
+</div>

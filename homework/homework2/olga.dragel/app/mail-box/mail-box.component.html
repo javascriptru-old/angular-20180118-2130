@@ -1,0 +1,9 @@
+<div>
+  <h3>Hello {{ ownerMailBox }} </h3>
+  <p></p>
+  <table>
+    <tr *ngFor="let mail of mails">
+      <app-mail [mail]="mail" (selectedMail)="deleteSelectedMail($event)"></app-mail>
+    </tr>
+  </table>
+</div>

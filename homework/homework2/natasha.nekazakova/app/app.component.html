@@ -1,0 +1,14 @@
+<!-- TODO: user-card component-->
+<div class="container" style="display:none;">
+  <ng-container *ngIf="usersList && usersList.length; else elseBlock">
+    <gc-user-card *ngFor="let userInfo of usersList" [user]="userInfo"></gc-user-card>
+  </ng-container>
+  <ng-template #elseBlock>
+    No users found
+  </ng-template>
+</div>
+
+<div class="container">
+  <gc-mail-box></gc-mail-box>
+</div>
+

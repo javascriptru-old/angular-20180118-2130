@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+</div>
+
+<div class="wrapper">
+  <div class="table">
+      
+    <div class="row header blue">
+      <div class="cell">
+        From
+      </div>
+      <div class="cell">
+        Subject
+      </div>
+      <div class="cell">
+        Date/Time Received
+      </div>
+      <div class="cell">
+        Delete
+      </div>
+    </div>
+   
+    <app-mail-line class="row" *ngFor="let mail of mails; let i = index;" [boundMessage]="mail" (deleted)="deleteThisLine($event)"></app-mail-line>
+
+     
+    
+    </div>
+    
+  </div>
+

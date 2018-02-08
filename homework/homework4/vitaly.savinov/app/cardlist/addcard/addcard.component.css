@@ -1,0 +1,46 @@
+h1 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.0em;
+    color: gray;
+    margin: 0 auto;
+    text-align: center;    
+}
+
+div {
+    display: inline-block;
+    float: left;
+    border: 2px solid gray;
+    color: gray;
+    width: 280px;
+    height: 140px;
+    padding: 10px 10px 30px 10px;
+    margin: 10px 4px 0 4px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+button {
+    position: relative; 
+    border: 2px solid gray;
+    border-radius: 6px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    padding: 4px 12px;
+    margin: 6px 0;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+}
+
+button:hover {
+    color: yellow;
+}
+ 
+input.ng-touched.ng-invalid{
+    border-color: red;
+}

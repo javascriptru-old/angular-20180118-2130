@@ -1,0 +1,15 @@
+<table>
+  <thead>
+    <tr>
+      <td>Пользователь</td><td>Пол</td><td>Дата рождения</td><td>email</td>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.fullname}}</td>
+        <td>{{user.male | sex}}</td>
+        <td>{{user.dateOfBirth | date}}</td>
+        <td>{{user.email}}</td>
+      </tr>
+  </tbody>
+</table>

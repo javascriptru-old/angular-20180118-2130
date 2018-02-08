@@ -1,0 +1,60 @@
+:host {
+  display: inline-block;
+}
+
+.contact-card {
+  position: relative;
+  display: flex;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #dfe3f3;
+
+  &__avatar-box {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__avatar-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__info-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info-field {
+    font-size: 12px;
+
+    &--name {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  &__delete-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    color: red;
+    cursor: pointer;
+    opacity: .5;
+    border: none;
+    background-color: transparent;
+    transition: color .2s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

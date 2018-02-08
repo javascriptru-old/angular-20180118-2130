@@ -1,0 +1,28 @@
+:host {
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #a61d16;
+  border-radius: 3px;
+  background-color: #7095e6;
+  transition: background-color .5s;
+
+  &--new {
+    background-color: green;
+  }
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px;
+  align-self: flex-start;
+  cursor: pointer;
+}

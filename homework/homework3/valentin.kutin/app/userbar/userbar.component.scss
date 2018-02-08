@@ -1,0 +1,13 @@
+.userbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px 20px 0 20px;
+
+  &__item {}
+
+  &__title {
+    margin: 0;
+  }
+}
