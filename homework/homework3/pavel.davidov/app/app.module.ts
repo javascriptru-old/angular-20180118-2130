@@ -19,12 +19,10 @@ import { AuthoriseService } from './authorise.service';
     AppComponent,
     UserCardComponent,
     MailBoxComponent,
-    MailComponent,
-    AddUserComponent
+    MailComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
     HttpClientModule
   ],
   providers: [
