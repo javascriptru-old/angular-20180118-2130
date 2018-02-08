@@ -5,13 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { UserCardComponent } from './user-card/user-card.component';
-import { MailBoxComponent } from './mail-box/mail-box.component';
-import { MailComponent } from './mail-box/mail.component';
-import { UsersService } from './users.service';
-import { LettersService } from './letters.service';
-import { LoggingService } from './logging.service';
-import { AuthoriseService } from './authorise.service';
+
 import { AddUserComponent } from './add-user/add-user.component';
 
 
@@ -19,9 +13,6 @@ import { AddUserComponent } from './add-user/add-user.component';
 @NgModule({
   declarations: [
     AppComponent,
-    UserCardComponent,
-    MailBoxComponent,
-    MailComponent,
     AddUserComponent
   ],
   imports: [
@@ -30,10 +21,7 @@ import { AddUserComponent } from './add-user/add-user.component';
     ReactiveFormsModule
   ],
   providers: [
-    UsersService,
-    LettersService,
-    LoggingService,
-    AuthoriseService
+
   ],
   bootstrap: [AppComponent]
 })
