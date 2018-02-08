@@ -1,0 +1,16 @@
+ 
+ <!-- Template URL: https://www.w3schools.com/howto/howto_css_profile_card.asp  -->
+ <!-- Add icon library -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <div class="card" [style.background]="bkgColor" >
+   <img src="{{cardUser.avatarUrl}}" alt="" style="width:100%">
+   <h1>{{cardUser.fullName}}</h1>
+   <p class="title">{{cardUser.email}}</p>
+   <p>{{cardUser.birthdate | date:'yyyy-MM-dd'}}</p>
+   <a href="#"><i class="fa fa-dribbble"></i></a>
+   <a href="#"><i class="fa fa-twitter"></i></a>
+   <a href="#"><i class="fa fa-linkedin"></i></a>
+   <a href="#"><i class="fa fa-facebook"></i></a>
+   <p><button (click) = "deleteCurrentUser()">Delete</button></p>
+ </div> 
