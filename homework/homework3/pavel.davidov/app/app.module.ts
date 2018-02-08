@@ -1,10 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-<<<<<<< HEAD:homework/homework3/pavel.davidov/app/app.module.ts
-=======
-import { ReactiveFormsModule } from '@angular/forms';
->>>>>>> project:project/src/app/app.module.ts
 
 
 import { AppComponent } from './app.component';
@@ -15,10 +11,6 @@ import { UsersService } from './users.service';
 import { LettersService } from './letters.service';
 import { LoggingService } from './logging.service';
 import { AuthoriseService } from './authorise.service';
-<<<<<<< HEAD:homework/homework3/pavel.davidov/app/app.module.ts
-=======
-import { AddUserComponent } from './add-user/add-user.component';
->>>>>>> project:project/src/app/app.module.ts
 
 
 
