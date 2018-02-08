@@ -35,7 +35,10 @@ debugger
   }
 
   add() {
-    // send http post -> result ok:
+    
+    const post = this.userFormGroup.value;
+    
+    // send http post -> result ok:    
     this.userFormGroup.reset();
     this.info = 'Пользователь добавлен!';
   }
