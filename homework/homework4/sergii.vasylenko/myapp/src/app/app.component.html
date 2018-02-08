@@ -1,0 +1,21 @@
+<table>
+  <tr>
+    <th>Id</th>
+    <th>name</th>
+    <th>family</th>
+    <th>sex</th>
+    <th>email</th>
+    <th>date</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.family}}</td>
+    <td>{{user.sex}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.date}}</td>
+  </tr>
+</table>
+
+<app-user-form></app-user-form>
+
