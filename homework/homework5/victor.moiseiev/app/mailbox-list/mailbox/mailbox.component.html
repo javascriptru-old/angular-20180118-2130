@@ -1,0 +1,14 @@
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>subject</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let letter of letters; let i = index" (click)="onSelect(letter)">
+      <td>{{i+1}}</td>
+      <td> {{letter.subject}} </td>
+    </tr>
+  </tbody>
+</table>

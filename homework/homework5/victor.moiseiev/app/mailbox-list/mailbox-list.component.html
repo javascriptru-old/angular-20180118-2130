@@ -1,0 +1,18 @@
+<div>
+  <h1>Letters</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mailbox of mailboxes; let i = index" [class.selected]="mailbox._id === selectedMailboxId" (click)=onSelect(mailbox)>
+        <td>{{i+1}}</td>
+        <td> {{mailbox.title}} </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<router-outlet></router-outlet>
