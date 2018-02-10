@@ -1,0 +1,61 @@
+<div [formGroup]="form">
+  <div>
+    <label>Name:
+      <br/>
+      <input type="text" formControlName="name" />
+    </label>
+    <p *ngIf="!name.valid && name.touched">
+      <span *ngIf="name.hasError('required')" class="alert-danger">You must include a last name.</span>
+      <span *ngIf="name.hasError('minlength')" class="alert-danger">Your name must be at least 2 characters long.</span>
+    </p>
+  </div>
+
+  <div>
+    <label>Surname:
+      <br/>
+      <input type="text" formControlName="surname" />
+    </label>
+    <p *ngIf="!surname.valid && surname.touched">
+      <span *ngIf="surname.hasError('required')" class="alert-danger">You must include a last name.</span>
+      <span *ngIf="surname.hasError('minlength')" class="alert-danger"> Your surname must be at least 2 characters long.</span>
+    </p>
+  </div>
+
+  <div>
+    <label>Sex:
+      <br/>
+      <select formControlName="sex">
+        <option value=""> - </option>
+        <option value="0"> {{0 | sex }} </option>
+        <option value="1 "> {{1 | sex }} </option>
+      </select>
+    </label>
+    <p *ngIf="!sex.valid && sex.touched">
+      <span *ngIf="sex.hasError('required')" class="alert-danger">You must select a sex.</span>
+    </p>
+  </div>
+
+  <div>
+    <label>Birthdate:
+      <br/>
+      <input type="date" formControlName="birthdate" />
+    </label>
+    <p *ngIf="!birthdate.valid && birthdate.touched">
+      <span *ngIf="birthdate.hasError('required')" class="alert-danger">You must enter a birthdate.</span>
+      <span *ngIf="birthdate.hasError('olderThan18')" class="alert-danger">You must be older than 18 years.</span>
+    </p>
+  </div>
+
+  <div>
+    <label>Email:
+      <br/>
+      <input type="email" placeholder="sophie@example.com" formControlName="email" />
+    </label>
+    <p *ngIf="!email.valid && email.touched">
+      <span *ngIf="email.hasError('required')" class="alert-danger">You must enter an email.</span>
+      <span *ngIf="email.hasError('email')" class="alert-danger">You must enter a correct email.</span>
+    </p>
+  </div>
+  <br/>
+  <button [disabled]="!form.valid" (click)="emitAddingUser()">Save</button>
+</div>
