@@ -1,0 +1,33 @@
+
+<fieldset [formGroup]="newUserControl" class="fieldset">
+  <span>First name: <input formControlName="firstName"></span><br/><br/>
+  <span>Last name: <input formControlName="lastName" ></span><br/><br/>
+  <span>Sex:
+    <input type="radio" formControlName="sex" value="1" > Man
+    <input type="radio" formControlName="sex" value="0"> Woman
+  </span><br/><br/>
+  <span>Date of birth:<input type="date" formControlName="dateOfBirth"></span><br/><br/>
+  <span>email:<input type="email" formControlName="email"  pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"></span><br/><br/>
+  <button (click)="addUser()">Add user</button>
+</fieldset>
+
+
+<table>
+  <tr>
+    <th>First</th>
+    <th>Last</th>
+    <th>Sex</th>
+    <th>Date of birth</th>
+    <th>email</th>
+  </tr>
+  <tr *ngFor="let user of users; let i=index">
+    <td>{{user.firstName}}</td>
+    <td>{{user.lastName}}</td>
+    <td>{{user.sex | sex}}</td>
+    <td>{{user.dateOfBirth | date}}</td>
+    <td>{{user.email}}</td>
+  </tr>
+</table>
+
+
+

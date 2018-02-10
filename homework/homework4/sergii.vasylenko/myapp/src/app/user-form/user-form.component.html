@@ -1,0 +1,20 @@
+<form action="saveUser(userGroup)" [formGroup]="userGroup">
+<div>
+  <div *ngIf="userGroup.status==='INVALID'">
+    <h2 style="color:red;">Please fill correct user form</h2>
+  </div>
+  <h3>Name</h3>
+  <input type="text" formControlName="name">
+  <h3>Family</h3>
+  <input type="text" formControlName="family">
+  <h3>Sex</h3>
+  <input type="checkbox" formControlName="sex">
+  <h3>Email</h3>
+  <input type="text" formControlName="email">
+  <h3>Date of birth</h3>
+  <input type="date" formControlName="date">
+  <div style="margin-top:30px;">
+    <button type="submit" (click)="saveUser(userGroup)">Save</button>
+  </div>
+</div>
+</form>

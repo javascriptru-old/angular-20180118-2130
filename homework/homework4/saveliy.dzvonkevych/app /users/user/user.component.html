@@ -1,0 +1,23 @@
+<div class="user">
+  <div class="user--thumb">
+    <img src="https://placeholdit.co/i/60x60" class="user--thumb__img">
+  </div>
+
+  <div class="user--meta">
+    <h4 class="user--name">{{user.name}} |
+      <a href="javascipt:" (click)="toggleLogIn()">
+        <span>Log in</span>
+      </a>
+      |
+      <a href="javascript:" (click)="delete()">Delete</a>
+    </h4>
+    <p *ngIf="user.email" class="user--email">
+      <span>{{user.email}}</span>
+    </p>
+    <p class="user--title">
+      <span *ngIf="user.title">{{user.title}}</span>
+      <span *ngIf="user.birth">{{user.birth}}</span>
+      <span *ngIf="user.gender">{{user.gender}}</span>
+    </p>
+  </div>
+</div>

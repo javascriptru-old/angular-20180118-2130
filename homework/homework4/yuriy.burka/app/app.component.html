@@ -1,0 +1,16 @@
+<form [formGroup]="form">
+  <fieldset>
+    surname: <input type="text" formControlName="surname">
+    name: <input type="text" formControlName="name">
+    sex: 
+    <select formControlName="sex">
+      <option value=true>Male</option>
+      <option value=false>Female</option>
+    </select>
+    date of birth: <input type="date" formControlName="date">
+    email: <input type="text" formControlName="email">
+    <button type="button" (click)="addUser()" [disabled]="!form.valid">Add User</button>
+  </fieldset>
+</form>
+<h1>Users</h1>
+<app-user-list [users]=users></app-user-list>

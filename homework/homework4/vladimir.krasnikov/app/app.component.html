@@ -1,0 +1,11 @@
+<div style="text-align:center">
+  <h2>
+    Home Work 4
+  </h2>
+  <h3><i>FormControls and FormGroup</i></h3>
+  <button (click)="showAddUserForm()" *ngIf="!showAddForm">Add User</button>
+  <br>
+  <br>
+  <app-user-add *ngIf="showAddForm" (formHidden)="hideAddUserForm($event)"></app-user-add>
+<app-user-list  *ngIf="!showAddForm"></app-user-list>
+</div>

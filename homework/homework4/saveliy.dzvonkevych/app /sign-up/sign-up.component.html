@@ -1,0 +1,33 @@
+<form
+    [formGroup]="signUpGroup"
+    name="sign-up"
+    class="form"
+    (submit)="onSubmit($event)">
+
+  <div class="form-item">
+    <input formControlName="name" type="text" name="name" placeholder="John Smith">
+  </div>
+
+  <div class="form-item">
+    <input formControlName="title" type="text" name="title" placeholder="Job title">
+  </div>
+
+  <div class="form-item">
+    <select formControlName="gender" name="gender">
+      <option>M</option>
+      <option>F</option>
+    </select>
+  </div>
+
+  <div class="form-item">
+    <input formControlName="birth" type="date" name="birth">
+  </div>
+
+  <div class="form-item">
+    <input formControlName="email" type="email" name="email" placeholder="example@mail.com">
+  </div>
+
+  <div class="form-item">
+    <button type="submit">Sign up</button>
+  </div>
+</form>
