@@ -1,0 +1,12 @@
+input:invalid,
+input.ng-invalid.ng-dirty {
+  border-color: pink;
+}
+
+div .alert-danger {
+  background-color: pink;
+}
+
+p {
+  margin: 0;
+}

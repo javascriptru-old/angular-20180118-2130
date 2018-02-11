@@ -1,0 +1,7 @@
+table {
+  padding-left: 50px;
+}
+
+table tr:hover {
+  color: gray;
+}

@@ -1,0 +1,24 @@
+<div>
+  <div>
+    <a routerLink="../">Back</a>
+  </div>
+  <br/>
+  <div>
+    <h5>To:</h5>
+    {{letter?.to}}
+  </div>
+
+  <div>
+    <h5>Subject:</h5>
+    {{letter?.subject}}
+
+  </div>
+
+  <div>
+    <h5>Body:</h5>
+
+    <textarea disabled>
+      {{letter?.body}}
+    </textarea>
+  </div>
+</div>
