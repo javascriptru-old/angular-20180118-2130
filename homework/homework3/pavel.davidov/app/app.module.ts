@@ -1,0 +1,83 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+<<<<<<< HEAD:project/src/app/app.module.ts
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+=======
+
+>>>>>>> master:homework/homework3/pavel.davidov/app/app.module.ts
+
+import { AppComponent } from './app.component';
+import { MailBoxComponent } from './mail-box/mail-box.component';
+import { MailComponent } from './mail-box/mail.component';
+import { LettersService } from './letters.service';
+import { LoggingService } from './logging.service';
+import { AuthoriseService } from './authorise.service';
+<<<<<<< HEAD:project/src/app/app.module.ts
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './auth.guard';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MailResolverService } from './mail-resolver.service';
+import { MailDetailComponent } from './mail-box/mail-detail/mail-detail.component';
+=======
+
+>>>>>>> master:homework/homework3/pavel.davidov/app/app.module.ts
+
+const routes = [
+  { path: '', component: HomeComponent },
+  {
+    path: 'mailbox',
+    component: MailBoxComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'mailbox/:boxid',
+    component: MailBoxComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'mailbox/:boxid/:id',
+    component: MailDetailComponent,
+    resolve: { mail: MailResolverService },
+    canActivate: [AuthGuard]
+  },
+  { path: 'login', component: LoginComponent },
+  { path: '**', component: PageNotFoundComponent }
+];
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    MailBoxComponent,
+<<<<<<< HEAD:project/src/app/app.module.ts
+    MailComponent,
+    LoginComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+    MailDetailComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot(routes)
+=======
+    MailComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule
+>>>>>>> master:homework/homework3/pavel.davidov/app/app.module.ts
+  ],
+  providers: [
+    LettersService,
+    LoggingService,
+    AuthoriseService,
+    AuthGuard,
+    MailResolverService
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
