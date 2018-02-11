@@ -1,0 +1,66 @@
+.mail-item {
+    position: relative;
+
+    &__item {
+        position: relative;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    &__date-wrap {
+        text-align: right;
+    }
+
+    &__close {
+        background: none;
+        border: none;
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0;
+        right: 0;
+        transform: rotate(45deg);
+        cursor: pointer;
+
+
+        &::before {
+            content: '+';
+
+        }
+    }   
+
+    &__title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    &__subtitle {
+        font-size: 13px;
+    }
+
+    &__body {
+        padding-top: 25px;
+    }
+
+    &__overlay-link {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        cursor: pointer;
+        z-index: 100;
+
+        &:hover {
+            & + .mail-item__item {
+                background: #eee;
+            }
+        }
+    }
+}

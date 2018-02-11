@@ -1,0 +1,15 @@
+.mail-box {
+    &__content {
+        width: 400px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

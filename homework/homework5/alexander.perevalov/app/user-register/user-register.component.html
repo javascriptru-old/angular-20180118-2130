@@ -1,0 +1,34 @@
+<form [formGroup]="form" class="user-form" (ngSubmit)="onSubmit()">
+  <div class="user-form__group">
+    <label>Имя</label>
+    <input type="text" formControlName="firstName">
+  </div>
+
+  <div class="user-form__group">
+    <label>Фамилия</label>
+    <input type="text" formControlName="lastName">
+  </div>
+
+  <div class="user-form__group">
+    <p>Пол</p>
+    <label for="male">М</label>
+    <input name="gender" id="male" type="radio" formControlName="gender" value="М">
+    <label for="female">Ж</label>
+    <input id="female" name="gender" type="radio" formControlName="gender" value="Ж">
+  </div>
+
+  <div class="user-form__group">
+    <label>Дата рождения</label>
+    <input id="birth" type="date" formControlName="birth">
+    <div style="color: red;" *ngIf="form.get('birth').errors">{{ form.get('birth').errors.AgeValidator.message }}</div>
+  </div>
+
+  <div class="user-form__group">
+    <label>E-mail</label>
+    <input id="email" type="email" formControlName="email">
+  </div>
+
+  <button [disabled]="!form.valid">Register</button>
+  <p>firstName is: {{ form.get('firstName').status | json }}</p>
+  <p>All form is: {{ form.status | json }}</p>
+</form>
