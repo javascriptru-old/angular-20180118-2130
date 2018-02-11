@@ -1,0 +1,9 @@
+<div class="users">
+  <div *ngFor="let user of users"  class="users__item">
+    <app-user
+            [user]="user"
+            (deleteUser)="deleteUser($event)"
+            (logInUser)="logInUser($event)"
+    ></app-user>
+  </div>
+</div>

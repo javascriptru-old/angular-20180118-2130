@@ -1,0 +1,40 @@
+<i>{{ info }}</i>
+<form [formGroup]="userFormGroup">
+  <div>
+    <label>Имя:</label>
+    <input type="text" formControlName="fname">
+    <span *ngIf="userFormGroup.get('fname').status==='INVALID'">{{ userFormGroup.get('fname').status }}</span>
+  </div>
+  <div>
+    <label>Фамилия:</label>
+    <input type="text" formControlName="lname">
+    <span></span>
+  </div>
+  <div>
+    <label>Пол:</label>
+  <select formControlName="gender" style="width: 80px;">
+    <option value="">...</option>
+    <option value="0">М</option>
+    <option value="1">Ж</option>
+  </select>
+  <span></span>
+  </div>
+  <div>
+    <label>Дата рождения:</label>
+    <input type="date" formControlName="bdate">
+    <span *ngIf="userFormGroup.get('bdate').status==='INVALID'">{{ userFormGroup.get('bdate').errors.bdate.value }}</span>
+  </div>
+  <div>
+    <label>E-mail:</label>
+    <input type="text" formControlName="email">
+    <span></span>
+  </div>
+  <p>
+    <button type="button" 
+            [disabled]="!userFormGroup.valid"
+            (click)="add()">Добавить пользователя</button>
+  </p>
+</form>
+
+<p>Form value: {{ userFormGroup.value | json }}</p>
+<p>Form status: {{ userFormGroup.status | json }}</p>
