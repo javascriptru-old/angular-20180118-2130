@@ -1,0 +1,6 @@
+Hello, {{userName}} <button (click)="logout()">Logout</button>
+<p>Boxes: <a *ngFor="let box of boxes"
+  routerLink="box/{{box.id}}"
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{exact:true}">{{box.title}}</a></p>
+<router-outlet></router-outlet>
