@@ -8,5 +8,4 @@
     <app-user-card *ngFor="let user of users" [user]="user"
     (clearUserEve)="clearUser($event)"></app-user-card>
 </div>
-
 <app-mail-box *ngIf="isAuthorise" [letters]="letters"></app-mail-box>
