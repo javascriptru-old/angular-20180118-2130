@@ -1,0 +1,25 @@
+<div class="authenticate">
+  <button type="button" *ngIf="isLoggedIn; else elseBlockLog" (click)="logOut()">
+    Log out
+  </button>
+  <ng-template #elseBlockLog>
+    <button  type="button" (click)="logIn()">
+      Log in
+    </button>
+  </ng-template>
+</div>
+
+<div class="container">
+  <ng-container *ngIf="users && users.length; else elseBlock">
+    <gc-user-card *ngFor="let user of users" [user]="user"></gc-user-card>
+  </ng-container>
+  <ng-template #elseBlock>
+    No users found
+  </ng-template>
+</div>
+
+<!-- pipe async -->
+<div class="container" *ngIf="isLoggedIn">
+  <gc-mail-box [inbox]="inbox"></gc-mail-box>
+</div>
+
