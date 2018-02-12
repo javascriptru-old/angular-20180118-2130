@@ -1,0 +1,12 @@
+<div style="border: 2px solid red">
+  <div style="border: 2px solid green" *ngFor="let i of [1,2,3]" >
+    <ng-content select=".header"></ng-content>
+  </div>
+  
+  <div style="border: 2px solid black">
+    <div></div>
+    <div>
+      <ng-content select=".main"></ng-content>
+    </div>
+  </div>
+</div>

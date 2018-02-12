@@ -28,7 +28,10 @@
 [26.02]
 - [ИМЯ Фамилия] - [code] - [demo (github-page)]
 
-
+README
+- about
+- install
+- ...
 
 
 Дополнительные вопросы
