@@ -1,0 +1,15 @@
+<figure class="snip">
+  <div class="image-container">
+    <button type="button" class="control-background" (click)="changeCardBackground()">
+      Change background
+    </button>
+    <img src="./assets/img/sample87.jpg" alt="" />
+  </div>
+  <figcaption [style.background]="cardBackground">
+    <img [src]="user.avatarUrl" [alt]="user.name" class="profile" />
+    <h2>{{user.name}}<span>{{user.email}}</span></h2>
+    <p>Some note text</p>
+    <a href="#" class="follow">Follow</a>
+    <a href="#" class="info">More Info</a>
+  </figcaption>
+</figure>
