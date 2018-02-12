@@ -1,0 +1,17 @@
+<form class="add-form" [formGroup]="contactForm">
+  <input type="text" placeholder="name" formControlName="nameControl">
+  <input type="text" placeholder="surname" formControlName="surnameControl">
+  <div formGroupName="sexGroup">
+    <label for="male">M</label>
+    <input id="male" name="sexControl" type="radio" formControlName="sexControl" value="M">
+    <label for="female">F</label>
+    <input id="female" name="sexControl" type="radio" formControlName="sexControl" value="F">
+  </div>
+  <input type="date" placeholder="age" formControlName="ageControl">
+  <input type="email" placeholder="email" formControlName="emailControl">
+</form>
+<button [disabled]="!contactForm.valid"
+        (click)="addContact()"
+        type="button"
+        class="add-btn">Add contact
+</button>
