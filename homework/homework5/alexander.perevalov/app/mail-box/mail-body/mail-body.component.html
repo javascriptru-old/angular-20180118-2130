@@ -1,0 +1,12 @@
+<div class="container">
+  <div *ngIf="letter">
+    Заказ#{{ letter._id }}
+    <br>
+    Тема: {{ letter.subject }}
+    <br>
+    Текст письма: {{ letter.body }}
+  </div>
+  <br>
+  <br>
+  <a routerLink="/messages">Назад</a>
+</div>
