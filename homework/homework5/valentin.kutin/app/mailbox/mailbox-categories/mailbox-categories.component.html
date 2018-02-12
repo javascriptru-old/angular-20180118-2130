@@ -1,0 +1,5 @@
+<ul class="mailbox-categories">
+  <li *ngFor="let category of list" class="item">
+    <a [routerLink]="['./']" [queryParams]="{ category: category._id }">{{ category.title }}</a>
+  </li>
+</ul>
