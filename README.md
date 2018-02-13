@@ -24,6 +24,7 @@
 Прием курсовых
 [19.02]
 - [ИМЯ Фамилия] - [code] - [demo (github-page)]
+- Pavel Davidov - https://github.com/DavidovPavel/mailbox - https://davidov.pavel.gitlab.io/mailbox/
 
 [26.02]
 - [ИМЯ Фамилия] - [code] - [demo (github-page)]
