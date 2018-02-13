@@ -1,0 +1,11 @@
+  <div class="container">
+      <label for="to" *ngIf="msg.mailbox === '5a77bb217f0d1fac2ba885dc'"><b>To</b></label>
+      <label for="to" *ngIf="msg.mailbox !== '5a77bb217f0d1fac2ba885dc'"><b>From</b></label>
+      <input type="text" [value]="msg?.to" readonly>
+      <label for="subject"><b>Subject</b></label>
+      <input type="text"  [value]="msg?.subject" readonly>
+      <label for="body"><b>Content</b></label>
+      <textarea rows="4" readonly>{{msg?.body}}</textarea>
+      <button (click)="goBack()">&lt;= Back</button>
+  </div>
+
