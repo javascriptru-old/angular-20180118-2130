@@ -1,0 +1,35 @@
+<form [formGroup]="userForm" novalidate (submit)="handleSubmit()">
+    <div class="form-group">
+        <label class="center-block">First Name:
+            <input class="form-control" formControlName="firstName">
+        </label>
+    </div>
+    <div class="form-group">
+        <label class="center-block">Last Name:
+            <input class="form-control" formControlName="lastName">
+        </label>
+    </div>
+    <div class="form-group">
+        <label class="center-block">Gender:
+            <select class="form-control" formControlName="gender">
+                <option value="M">M</option>
+                <option value="W">W</option>
+            </select>
+        </label>
+    </div>
+    <div class="form-group">
+        <label class="center-block">Birthday:
+            <input class="form-control" type="date" formControlName="birthdate">
+        </label>
+    </div>
+    <div class="form-group">
+        <label class="center-block">Email:
+            <input class="form-control" type="email" formControlName="email">
+        </label>
+    </div>
+
+    <button>Save</button>
+</form>
+
+<p>Form value: {{ userForm.value | json }}</p>
+<p>Form status: {{ userForm.status | json }}</p>
