@@ -1,0 +1,9 @@
+<div>
+  <h1>Cards</h1>
+  <div class="add">
+    <app-addcard></app-addcard>
+  </div>
+  <div class="list" *ngFor="let curUser of users">
+    <app-usercard [card]="curUser" (deleted)="onDelete($event)"></app-usercard>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="user-card" [style.backgroundColor] = userBackgroundColor>
+  <div class="user-about">
+    <div class="img-container">
+      <img [src]="userCard.avatar" alt="profile">
+    </div>
+    <div class="user-info">
+      <h3>{{userCard.name}}</h3>
+      <span>должность: {{userCard.position}}</span>
+    </div>
+  </div>
+  <button type="button" class="btn-more" (click)="changeColor()">Подробнее</button>
+</div>

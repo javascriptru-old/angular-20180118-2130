@@ -1,0 +1,29 @@
+.user {
+  display: flex;
+  align-items: center;
+
+  > * + * {
+    margin-left: 10px;
+  }
+
+  &--meta {
+    a {
+      color: mediumvioletred;
+    }
+
+    > * {
+      margin: 0;
+
+      + * {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &--thumb {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,13 @@
+<h3>Inbox ({{inbox.length}} mails)</h3>
+<div class="mail-box-container">
+  <ng-container *ngIf="inbox && inbox.length; else elseBlock">
+    <gc-mail *ngFor="let mail of inbox; index as i; first as isFirst"
+             [mail]="mail"
+             [isFirst]="isFirst"
+             [index]="i"
+             (deleteMail)="deleteMail($event)"></gc-mail>
+  </ng-container>
+  <ng-template #elseBlock>
+    No mail
+  </ng-template>
+</div>

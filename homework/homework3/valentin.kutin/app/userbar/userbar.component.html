@@ -1,0 +1,9 @@
+<div class="userbar">
+  <div class="userbar__item">
+    <h1 class="userbar__title">MailBox</h1>
+  </div>
+  <div class="userbar__item">
+    <button *ngIf="!authorizationStatus" type="button" (click)="logIn()">Login</button>
+    <button *ngIf="authorizationStatus" type="button" (click)="logOut()">Logout</button>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -7.5px -15px;
+
+  &-item {
+    flex-grow: 1;
+    margin: 7.5px;
+  }
+
+  input,
+  select,
+  button {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 9px;
+    height: 30px;
+    white-space: nowrap;
+  }
+}

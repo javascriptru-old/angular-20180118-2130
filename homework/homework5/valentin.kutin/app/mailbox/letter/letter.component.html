@@ -1,0 +1,7 @@
+<div *ngIf="letter" class="letter">
+  <a class="to" [href]="'mailto' + letter.to">{{ letter.to }}</a>
+  <h3>{{ letter.subject }}</h3>
+  <div class="description">
+    {{ letter.body }}
+  </div>
+</div>

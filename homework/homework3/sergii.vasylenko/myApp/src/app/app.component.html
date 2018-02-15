@@ -1,0 +1,49 @@
+<div class="log">
+  <button (click)="setLogging(true)">Log in</button>
+  <button (click)="setLogging(false)">Log out</button>
+</div>
+<div class="users">
+  <h1>Users</h1>
+  <table>
+    <tr>
+      <th >Id</th>
+      <th >Name</th>
+      <th >Email</th>
+    </tr>
+    <tr *ngFor="let user of users" style="width:100%">
+      <app-user [user]="user"></app-user>
+    </tr>
+  </table>
+</div>
+<div class="mailBox" *ngIf="getLogging()">
+  <h1>Mail boxes</h1>
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+    </tr>
+    <tr *ngFor="let mailBox of mailBoxes">
+      <app-mail-box [mailBox]="mailBox"></app-mail-box>
+    </tr>
+  </table>
+</div>
+<div class="mailBox" *ngIf="getLogging()">
+    <h1>Letters</h1>
+    <table>
+      <tr>
+        <th>Id</th>
+        <th>Mailbox</th>
+        <th>Subject</th>
+        <th>Body</th>
+        <th>To</th>
+      </tr>
+      <tr *ngFor="let mail of mails">
+        <app-mail [mail]="mail"></app-mail>
+      </tr>
+    </table>
+  </div>
+
+  
+
+
+

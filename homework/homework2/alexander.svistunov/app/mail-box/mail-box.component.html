@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let emailMessage of emails; let i = index">
+    <app-mail-message (removeEvent)="removeMessage($event)" [currentIndex]="i">{{emailMessage}}</app-mail-message>
+  </li>
+</ul>
+

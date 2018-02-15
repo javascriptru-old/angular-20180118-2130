@@ -1,0 +1,16 @@
+<figure class="snip1336">
+  <img [src]="user.coverUrl" alt="sample87" />
+
+  <figcaption>
+    <img [src]="user.avatar" alt="profile-sample4" class="profile" />
+
+    <h2 [style.color] = "titleColor">{{user.name}} {{user.surname}}
+      <span>{{user.occupation}}</span>
+    </h2>
+
+    <p>{{user.describe}}</p>
+
+    <a href="#" (click) = "changeTitleColor()" class="follow">Follow</a>
+    
+  </figcaption>
+</figure>

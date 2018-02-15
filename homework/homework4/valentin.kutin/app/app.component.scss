@@ -1,0 +1,17 @@
+.users-list {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 33.33%;
+    padding: 2px;
+    box-sizing: border-box;
+  }
+}
+
+.add-user {
+  width: 1024px;
+  margin: 40px auto;
+}

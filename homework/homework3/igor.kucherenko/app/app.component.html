@@ -1,0 +1,12 @@
+<div class="app-component">
+  <header class="header">
+    <app-header></app-header>
+  </header>
+  <main class="app-component__wrapper" *ngIf="isAuthorized; else unauthorized">
+    <app-work-space></app-work-space>
+  </main>
+</div>
+
+<ng-template #unauthorized>
+  <h2 class="title">You are not logged in</h2>
+</ng-template>

@@ -1,0 +1,10 @@
+<div class="mail-list" *ngIf="isLetters">
+    <div *ngFor="let mail of mails; let i = index" class="mail-list__item">
+        <app-mail
+                [mail]="mail"
+                [id]="mailsIds[i]"
+                (deleteLetter)="deleteLetter($event)"
+        ></app-mail>
+    </div>
+</div>
+<div *ngIf="!isLetters">{{placeholderMessage}}</div>

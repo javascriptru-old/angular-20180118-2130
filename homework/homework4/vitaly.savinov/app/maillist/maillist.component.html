@@ -1,0 +1,19 @@
+<div>
+    <h1>Mails</h1>
+    <button class="login" (click)="doAuth( true )">Log in</button> 
+    <button class="logout" (click)="doAuth( false )">Log out</button>
+    <span *ngIf="authFlag" class="in">Logged in</span>
+    <span *ngIf="!authFlag" class="out">Logged out</span>
+    <br />
+    <div class="head action"> </div>
+    <div class="head to">To</div>
+    <div class="head subject">Subject</div>
+    <div class="head body">Body</div>
+    
+    <div class="list" *ngFor="let item of mails">
+        <app-singlemail *ngIf="authFlag" [mail]="item" (deleted)="onDelete($event)"></app-singlemail>
+    </div>  
+    <div class="add">
+        <app-addmail></app-addmail>
+    </div>
+</div>

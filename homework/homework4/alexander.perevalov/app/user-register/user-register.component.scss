@@ -1,0 +1,39 @@
+.user-form {
+    width: 300px;
+    margin: 0 auto;
+    background: #f0f0f0;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+
+    &.ng-invalid {
+        border-color: rgb(247, 150, 150);        
+    }
+
+    &__group {
+        margin-bottom: 30px;
+    }
+
+    label {
+        font-size: 11px;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+
+    input:not([type=radio]) {
+        display: block;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        width: 100%;
+
+        &.ng-invalid {
+            border-color: rgb(247, 150, 150);
+        }
+    }
+
+    button {
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+}

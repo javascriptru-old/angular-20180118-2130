@@ -3,7 +3,7 @@
 Что подготовить(или уже знать)?
 
 - Javascript - https://learn.javascript.ru
-- EcmaScript2015 - https://learn.javascript.ru/es-modern 
+- EcmaScript2015 - https://learn.javascript.ru/es-modern
 - TypeScript
   -- классы/интерфейсы
   -- декораторы (класса, свойства)
@@ -21,5 +21,21 @@
 - индивидуальное задание
 - общее задание
 
+Прием курсовых
+[19.02]
+- [ИМЯ Фамилия] - [code] - [demo (github-page)]
+- Pavel Davidov - https://github.com/DavidovPavel/mailbox - https://davidov.pavel.gitlab.io/mailbox/
+
+[26.02]
+- [ИМЯ Фамилия] - [code] - [demo (github-page)]
+- Валентин Кутин
+
+README
+- about
+- install
+- ...
+
+
 Дополнительные вопросы
 - поиск утечек памяти
+- работа с данными в многопользовательской системе. Как узнать, что данные нужно обновить и как правильно обновить?

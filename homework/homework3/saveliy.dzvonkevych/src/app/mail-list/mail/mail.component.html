@@ -1,0 +1,8 @@
+<div class="mail">
+  <div class="mail--meta">
+    <div class="mail--received">{{mail.received}}</div>
+    <div class="mail--sender" *ngIf="mail.sender">{{mail.sender}}</div>
+    <div class="mail--title">{{mail.title}}</div>
+  </div>
+  <div class="mail--panel"><a href="javascript:" (click)="delete()">Delete</a></div>
+</div>

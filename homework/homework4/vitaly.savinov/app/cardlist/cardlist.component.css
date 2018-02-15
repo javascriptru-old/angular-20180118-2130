@@ -1,0 +1,27 @@
+div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 16px 0 0 16px;
+    padding: 2px 10px;
+    border: 1px dotted crimson;
+    width: 330px;
+}
+
+h1 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: crimson;
+    margin: 0 auto;
+    text-align: center;    
+}
+
+.list {
+    border: none;
+    margin: 0;
+}
+
+.add {
+    border: none;
+    margin: 0 0 10px 0;
+}

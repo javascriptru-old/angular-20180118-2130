@@ -1,0 +1,30 @@
+<form [formGroup]="userForm" (submit)="onSubmit()" class="user-form">
+  <div class="user-form__row">
+    <div class="user-form__item">
+      <span>Имя</span>
+      <input formControlName="firstName" type="text">
+    </div>
+    <div class="user-form__item">
+      <span>Фамилия</span>
+      <input formControlName="lastName" type="text">
+    </div>
+  </div>
+  <div class="user-form__row">
+    <div class="user-form__item">
+      <span>Пол:</span>
+      <select formControlName="gender">
+        <option *ngFor="let item of gender; let i = index" [value]="item">{{item}}</option>
+      </select>
+    </div>
+    <div class="user-form__item">
+      <span>Дата рождения</span>
+      <input formControlName="birthdate" type="date">
+    </div>
+    <div class="user-form__item">
+      <span>Email</span>
+      <input formControlName="email" type="email">
+    </div>
+  </div>
+  <div *ngIf="errors" [style.color]="'red'">The form is invalid</div>
+  <button type="submit">Добавить</button>
+</form>

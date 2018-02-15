@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+.work-space {
+  display: flex;
+  padding: 20px;
+
+  &__contacts-box {
+    margin-right: 20px;
+  }
+}

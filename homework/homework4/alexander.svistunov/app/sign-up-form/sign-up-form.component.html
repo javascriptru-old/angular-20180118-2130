@@ -1,0 +1,40 @@
+<h3>Зарегистрироваться в системе</h3>
+<form #form="ngForm" action="" [formGroup]="fullNameControl" class="sign-up-form" (submit)="addUser()">
+  <p>
+    <label class="sign-up-form-label">Имя</label>
+    <input type="text" formControlName="firstName">
+  </p>
+  <p>
+    <label class="sign-up-form-label">Фамилия</label>
+    <input type="text" formControlName="lastName">
+  </p>
+  <p>
+    <label class="sign-up-form-label">Пол</label>
+    <label>
+      <input type="radio" formControlName="sex" value="1">
+      Мужской
+    </label>
+    <label>
+      <input type="radio" formControlName="sex" value="0">
+      Женский
+    </label>
+  </p>
+  <p>
+    <label class="sign-up-form-label">Дата рождения</label>
+    <input type="date" formControlName="dateOfBirth">
+  </p>
+  <p>
+    <label class="sign-up-form-label">E-mail</label>
+    <input type="email" formControlName="email">
+  </p>
+  <button type="submit" [disabled]="!form.valid">Зарегистрироваться</button>
+</form>
+
+<div>
+  <span>Список пользователей:</span>
+  <ul>
+    <li *ngFor="let user of userList">
+      {{user.firstName}} {{user.lastName}}
+    </li>
+  </ul>
+</div>

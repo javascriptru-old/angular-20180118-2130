@@ -1,0 +1,31 @@
+<!-- 
+<app-item>
+   <h1 class="header">Title</h1>
+   
+   <section class="main">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consequatur possimus deleniti? Similique illo adipisci et, corporis quidem ad recusandae id nobis ex voluptas pariatur non provident tenetur eius beatae?
+   </section>
+
+</app-item>
+
+
+VIEW
+CONTENT 
+
+
+<app-item>
+    <h1 class="main">{{title}}</h1>
+    
+    <section class="header">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consequatur possimus deleniti? Similique illo adipisci et, corporis quidem ad recusandae id nobis ex voluptas pariatur non provident tenetur eius beatae?
+    </section>
+ 
+ </app-item> -->
+
+<ng-container *ngTemplateOutlet="t"></ng-container>
+
+<ng-template #t>
+    <section class="header">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consequatur possimus deleniti? Similique illo adipisci et, corporis quidem ad recusandae id nobis ex voluptas pariatur non provident tenetur eius beatae?
+      </section> 
+</ng-template>

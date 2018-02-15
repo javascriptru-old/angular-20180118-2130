@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h2>
+    Home Work 3
+  </h2>
+<app-login></app-login>
+<br />
+<div width="100%" *ngIf="loginService.isAuthenticated">
+<button (click)="toggleView()" >{{bttnText}}</button>
+
+<app-mail-list *ngIf="showMailList"></app-mail-list>
+<app-user-list *ngIf="showUserList"></app-user-list>
+<app-log></app-log>
+</div>  
+</div>
