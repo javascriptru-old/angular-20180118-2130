@@ -1,0 +1,7 @@
+<h2>Mailbox</h2>
+<div *ngIf="mailbox">
+  <div *ngFor="let item of mailbox">
+    <a routerLink="{{item.id}}">{{item.title}}</a>
+  </div>
+</div>
+<router-outlet></router-outlet>
