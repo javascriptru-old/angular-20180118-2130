@@ -1,0 +1,5 @@
+<ul class="letters">
+  <li *ngFor="let letter of letters">
+    <app-letter [letter]="letter" (delete)="deleteLetter($event)"></app-letter>
+  </li>
+</ul>
