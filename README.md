@@ -27,6 +27,7 @@
 
 [26.02]
 - [ИМЯ Фамилия] - [code] - [demo (github-page)]
+- [Виталий Савинов] - [code] - [demo (github-page)]
 
 README
 - about
