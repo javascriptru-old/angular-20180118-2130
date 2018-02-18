@@ -1,0 +1,7 @@
+<ul class="letters">
+  <li *ngFor="let letter of letters">
+    <app-letter [letter]="letter" (delete)="deleteLetter($event)"></app-letter>
+  </li>
+</ul>
+
+<p *ngIf="letters.length === 0">Your mailbox is empty</p>
