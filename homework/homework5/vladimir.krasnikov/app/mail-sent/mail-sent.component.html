@@ -1,0 +1,38 @@
+<div class="table">
+    
+  <div class="row header blue">
+    <div class="cell">
+      Delete
+    </div>
+    <div class="cell">
+      To
+    </div>
+    <div class="cell">
+      Subject
+    </div>
+    <div class="cell">
+      View
+    </div>
+  </div>
+  
+    <div class="row" *ngFor="let mail of mails; let i = index;">
+      <div class="cell">
+        <button (click) = "deleteMessage(i)">Delete</button>
+      </div>
+      <div class="cell">
+      {{mail.to}}
+      </div>
+      <div class="cell">
+        {{mail.subject}}
+      </div>
+      <div class="cell">
+        <a routerLink="/view/{{mail._id}}">
+          View	
+        </a>
+      </div>
+  </div>
+</div>
+<br>
+<div align="center">
+<button (click) = "addTestMessages()">Add Test Messages</button>
+</div>

@@ -1,0 +1,7 @@
+<h3>Здравствуйте, {{_userName}}!</h3>
+<p>У вас {{_letters[_userId].letterList.length}} писем:</p>
+<ul>
+  <li *ngFor="let letter of _letters[_userId].letterList; let indexLetter = index">
+    <a href="javascript:void(0);" (click)="readLetter(indexLetter)">{{letter.brief}}</a>
+  </li>
+</ul>

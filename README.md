@@ -3,7 +3,7 @@
 Что подготовить(или уже знать)?
 
 - Javascript - https://learn.javascript.ru
-- EcmaScript2015 - https://learn.javascript.ru/es-modern 
+- EcmaScript2015 - https://learn.javascript.ru/es-modern
 - TypeScript
   -- классы/интерфейсы
   -- декораторы (класса, свойства)
@@ -24,10 +24,13 @@
 Прием курсовых
 [19.02]
 - [ИМЯ Фамилия] - [code] - [demo (github-page)]
+- Pavel Davidov - https://github.com/DavidovPavel/mailbox - https://vigorous-minsky-7ab739.netlify.com
 
 [26.02]
 - [ИМЯ Фамилия] - [code] - [demo (github-page)]
 - [Виталий Савинов] - [code] - [demo (github-page)]
+- Валентин Кутин
+- Юрий Бурка - https://github.com/Burich/ng5-course-proj - https://pseudo-mail.netlify.com
 
 README
 - about
