@@ -30,6 +30,7 @@
 - [ИМЯ Фамилия] - [code] - [demo (github-page)]
 - [Виталий Савинов] - [code] - [demo (github-page)]
 - Валентин Кутин
+- Дзвонкевич Савелий
 - Юрий Бурка - https://github.com/Burich/ng5-course-proj - https://pseudo-mail.netlify.com
 
 README
