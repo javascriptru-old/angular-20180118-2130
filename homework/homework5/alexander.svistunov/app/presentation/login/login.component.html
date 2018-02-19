@@ -1,0 +1,11 @@
+<form #form="ngForm" action="" [formGroup]="loginControl" (submit)="logIn()" class="log-in-form">
+  <p>
+    <label class="log-in-form-label">E-mail</label>
+    <input type="email" formControlName="email">
+  </p>
+  <p>
+    <label class="log-in-form-label">Пароль</label>
+    <input type="password" formControlName="password">
+  </p>
+  <button type="submit" [disabled]="!form.valid">Войти</button>
+</form>
