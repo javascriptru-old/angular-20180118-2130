@@ -1,0 +1,10 @@
+<button (click)="emitValue()">Emit!</button>
+<button (click)="subscribe()">Subscribe!</button>
+
+subscribersValues
+
+<ul>
+  <li *ngFor="let subscribersValue of subscribersValues; let i = index;">
+    Subscriber {{i}}: {{subscribersValue.join()}}
+  </li>
+</ul>

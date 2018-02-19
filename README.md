@@ -43,3 +43,23 @@ README
 - поиск утечек памяти
 - работа с данными в многопользовательской системе. Как узнать, что данные нужно обновить и как правильно обновить?
 - пожалуйста, объясните более подробно и убедительно, почему вы считаете, что двустороннюю привязку [(ngModel)] не следует использовать в Angular 2
+
+
+3rd party
+type?
+- ui           -> component, directive
+- logic/helper -> service
+
+which?
+-> Angular pure solution
+-> Angular wrapper
+-> own Angular pure solution 
+-> own Angular wrapper
+
+
+
+
+<input [(ngModel)]="user.name" (ngModelChange)="user.name = $event">
+
+
+<user-card [(user)]="user">
