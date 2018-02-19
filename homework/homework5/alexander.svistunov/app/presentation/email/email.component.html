@@ -1,0 +1,11 @@
+<span>Ваш почтовый ящик: {{_userEmail}}</span>
+<button type="button" (click)="logOut()">Выйти</button>
+<ul class="email-links">
+  <li>
+    <a routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Входящие</a>
+  </li>
+  <li>
+    <a routerLink="compose" routerLinkActive="active">Написать</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>

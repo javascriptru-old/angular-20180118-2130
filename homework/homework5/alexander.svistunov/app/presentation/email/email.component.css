@@ -1,0 +1,12 @@
+.email-links {
+  display: flex;
+  list-style: none;
+}
+
+.email-links li {
+  margin-right: 10px;
+}
+
+.email-links a.active {
+  color: #ff8a3d;
+}
