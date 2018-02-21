@@ -32,6 +32,7 @@
 - Валентин Кутин
 - Дзвонкевич Савелий
 - Юрий Бурка - https://github.com/Burich/ng5-course-proj - https://pseudo-mail.netlify.com
+- Суматохин Сергей - https://github.com/Serdji/angularDZ - https://elastic-darwin-6f3f1d.netlify.com/
 
 README
 - about
