@@ -1,0 +1,8 @@
+<button *ngIf="autorizationService.isAutorized" (click)="logOut()">Logout</button>
+
+<h3>Please, choose account</h3>
+<div class="clearfix"><app-user-card *ngFor="let user of users" [user]="user" (onChooseAccount)="showLetters($event)"></app-user-card></div>
+
+<app-mail-box [account]="account"></app-mail-box>
+
+<app-add-user></app-add-user>

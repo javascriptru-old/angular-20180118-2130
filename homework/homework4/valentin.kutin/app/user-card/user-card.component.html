@@ -1,0 +1,10 @@
+<div class="user-card">
+  <img class="user-card__avatar" [src]="(data.avatarUrl) ? data.avatarUrl : 'https://png.icons8.com/android/1600/user.png'"/>
+  <div class="user-card__description">
+    <button class="user-card__button" (click)="color = getRandomColor()" [style.background-color]="color">Change color</button>
+    <div class="user-card__name">{{data.fullName}}</div>
+    <div *ngIf="data.birthdate" class="user-card__property">{{data.birthdate | date:'shortDate'}}</div>
+    <div *ngIf="data.gender" class="user-card__property">gender: {{data.gender}}</div>
+    <div><a class="user-card__email" [href]="'mailto:' + data.email">{{data.email}}</a></div>
+  </div>
+</div>

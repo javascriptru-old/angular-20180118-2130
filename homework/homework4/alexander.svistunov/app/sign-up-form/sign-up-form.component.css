@@ -1,0 +1,31 @@
+h3 {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.sign-up-form {
+  width: 300px;
+  margin: 30px auto;
+  margin-bottom: 100px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.sign-up-form.ng-valid {
+  border-color: #3faa4d;
+  background-color: rgba(170, 255, 170, 0.2);
+}
+
+.sign-up-form input[type="text"],
+.sign-up-form input[type="date"],
+.sign-up-form input[type="email"] {
+  width: 75%;
+}
+
+.sign-up-form-label {
+  display: block;
+}
+
+.sign-up-form .ng-invalid.ng-dirty {
+  border-color: firebrick;
+}

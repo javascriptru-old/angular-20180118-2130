@@ -1,0 +1,38 @@
+:host {
+  display: block;
+}
+
+.user-card {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: #eee;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.user-about {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.img-container {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100px;
+  height: auto;
+}
+
+.btn-more {
+  display: block;
+  border-radius: 5px;
+  padding: 5px;
+}

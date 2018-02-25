@@ -1,0 +1,17 @@
+<div class="mail-item">
+  <a class="mail-item__overlay-link" [routerLink]="['/messages', letter._id]"></a>
+  <div class="mail-item__item">
+    <div class="mail-item__title">
+      {{ 'Письмо' + ' #' + letter._id }}
+    </div>
+
+    <div class="mail-item__subtitle">
+      Тема: {{ letter.subject }}
+    </div>
+    <div class="mail-item__subtitle">Кому: {{ letter.to }}</div>
+    <div class="mail-item__body">
+      {{ letter.body }}
+    </div>
+
+  </div>
+</div>

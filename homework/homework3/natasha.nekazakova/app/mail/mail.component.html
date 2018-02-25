@@ -1,0 +1,37 @@
+<div class="mail mail-head" *ngIf="isFirst">
+  <div class="mail-number">
+    Number
+  </div>
+  <div class="mail-received">
+    Received
+  </div>
+  <div class="mail-subject">
+    Subject
+  </div>
+  <div class="mail-body">
+    Body
+  </div>
+  <div class="mail-actions">
+    Actions
+  </div>
+</div>
+
+<div class="mail">
+  <div class="mail-number">
+    {{index + 1}}
+  </div>
+  <div class="mail-received">
+    {{formatedDate}}
+  </div>
+  <div class="mail-subject">
+    {{mail.subject}}
+  </div>
+  <div class="mail-body">
+    {{mail.body}}
+  </div>
+  <div class="mail-actions">
+    <button type="button" (click)="delete(index)">
+      Delete
+    </button>
+  </div>
+</div>

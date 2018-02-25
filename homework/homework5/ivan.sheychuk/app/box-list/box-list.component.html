@@ -1,0 +1,6 @@
+<ul *ngIf="boxlist">
+  <li *ngFor="let box of boxlist">
+    <a routerLink="{{box.id}}">{{box.name}}</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>

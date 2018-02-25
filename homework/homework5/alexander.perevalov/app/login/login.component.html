@@ -1,0 +1,8 @@
+<h2>Вход в почту</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>Email</label>
+  <input formControlName="login" type="text" placeholder="name@example.ru">
+  <button [disabled]="!form.valid">Войти</button>
+  <div class="error" *ngIf="form.get('login').touched && form.get('login').invalid">Введите email</div>
+</form>

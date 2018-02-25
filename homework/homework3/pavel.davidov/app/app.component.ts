@@ -30,13 +30,10 @@ export class AppComponent implements OnInit {
 
     // get mailbox
     // this.letterService.setMailbox().subscribe((box: Mailbox) => {
-
     // this.letterService
     //   .save(new Letter({ mailbox: '5a71776bee8f7fa64a77fb7f', subject: 'test', to: 'test@test.ru', body: 'text' }))
     //   .subscribe();
-
     // });
-
     // this.userService.save(new User('Angela Merkel', 'a.merkel@mail.com')).subscribe();
   }
 

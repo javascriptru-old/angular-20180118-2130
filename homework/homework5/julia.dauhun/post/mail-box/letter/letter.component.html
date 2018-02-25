@@ -1,0 +1,7 @@
+<div class="letter">
+  <a routerLink="/post/letter/{{letter._id}}">
+    {{letter.to}}
+    | <b>{{letter.subject}}</b>
+  </a>
+  <button (click)="runDelete()">X</button>
+</div>

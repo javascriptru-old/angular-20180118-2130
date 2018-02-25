@@ -1,0 +1,10 @@
+.user-form {
+  &__row {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    margin-right: 30px;
+  }
+}

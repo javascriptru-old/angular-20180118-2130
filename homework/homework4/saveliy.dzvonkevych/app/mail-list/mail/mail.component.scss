@@ -1,0 +1,38 @@
+.mail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .8em;
+
+  > * + * {
+    margin-left: 10px;
+  }
+
+  &--received {
+    width: 20%;
+  }
+
+  &--sender {
+    width: 25%;
+  }
+
+  &--title {
+    width: 55%;
+  }
+
+  &--meta {
+    display: flex;
+    align-items: center;
+    width: 85%;
+
+    > * + * {
+      margin-left: 10px;
+    }
+
+    > * {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}

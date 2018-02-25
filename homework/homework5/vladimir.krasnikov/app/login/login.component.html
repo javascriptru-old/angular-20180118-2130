@@ -1,0 +1,13 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate *ngIf="!isAuthenticated">
+    <div class="container">
+        <label for="userName"><b>Username</b></label>
+        <input type="text" placeholder="username" formControlName="userName">
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="password" formControlName="password">
+        <div class="clearfix">
+            <button type="submit" class="signupbtn">Login</button>
+        </div>
+        <p style="color: maroon;"><b>{{errorMsg}}</b></p>
+    </div>
+</form> 
+<div *ngIf="isAuthenticated">Hello {{userName}}! <button (click)="signOut()">Sign Out</button></div>

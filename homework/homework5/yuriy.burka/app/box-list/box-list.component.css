@@ -1,0 +1,11 @@
+* {
+    padding: 1px;
+}
+
+a {
+    color: blue;
+}
+
+.active {
+    color: magenta;    
+}

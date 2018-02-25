@@ -1,0 +1,9 @@
+<app-header (onLogOut)="logOut($event)"></app-header>
+<div class="mailbox">
+  <div class="sidebar">
+    <app-mailbox-categories></app-mailbox-categories>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
