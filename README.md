@@ -28,7 +28,7 @@
 
 [26.02]
 - [ИМЯ Фамилия] - [code] - [demo (github-page)]
-- [Виталий Савинов] - [code] - [demo (github-page)]
+- Виталий Савинов - https://github.com/vpapazol/mailclone - http://musing-cray-0abffd.netlify.com  - запускать только на http://
 - Валентин Кутин
 - Дзвонкевич Савелий
 - Юрий Бурка - https://github.com/Burich/ng5-course-proj - https://pseudo-mail.netlify.com
