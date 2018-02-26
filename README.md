@@ -34,6 +34,7 @@
 - Юрий Бурка - https://github.com/Burich/ng5-course-proj - https://pseudo-mail.netlify.com
 - Суматохин Сергей - https://github.com/Serdji/angularDZ - https://elastic-darwin-6f3f1d.netlify.com/
 - Виктор Моисеев - `https://github.com/moivile/gmail` - `https://victor-gmail.netlify.com`
+- Долгун Юлия - https://github.com/Julia1996/Julia1996.github.io - https://julia1996.github.io/
 
 README
 - about
@@ -48,6 +49,7 @@ README
 - еще раз объяснить работу ControlValueAccessor. Например у нас есть форма с инпутами, и один из них это компонент в котором див с возможностью вводить в него текст. Как правильно будет подключить этот компонент к форме и что бы он работал с остальными инпутами ?
 - как лучше реализовать в таблице изменение порядка строк и соответсвующего порядка елементов привязанного массива путем drag-n-drop
 - PWA + angular
+- Как сделать попап с плавным открытием с помощью анимаций.
 
 
 
