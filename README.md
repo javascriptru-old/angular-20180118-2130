@@ -31,6 +31,7 @@
 - Суматохин Сергей - https://github.com/Serdji/angularDZ - https://elastic-darwin-6f3f1d.netlify.com/
 - Виктор Моисеев - `https://github.com/moivile/gmail` - `https://victor-gmail.netlify.com`
 - Долгун Юлия - https://github.com/Julia1996/Julia1996.github.io - https://julia1996.github.io/
+- Перевалов Александр - https://github.com/alxpsr/ngmail
 
 README
 - about
